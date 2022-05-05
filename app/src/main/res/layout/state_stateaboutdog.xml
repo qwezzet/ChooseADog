@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customactivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.widget.Button
+            android:id="@+id/btnfromstatetotwo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/dogname"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/custombtnsearch"
+            android:gravity="center"
+            android:textSize="20sp"
+
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        android:layout_gravity="top"
+
+
+        />
+
+</LinearLayout>

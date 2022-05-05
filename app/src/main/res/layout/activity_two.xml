@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customphotomain"
+    android:orientation="vertical"
+    tools:context=".TwoActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="160dp">
+
+        <ImageButton
+            android:id="@+id/btntotbl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/customphotomain"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:src="@drawable/tablephoto1" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customvideofon">
+
+        <Button
+            android:id="@+id/sortandsearchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customnone"
+            android:onClick="showSortTapped"
+            android:text="Поиск и фильтры"
+            android:textAllCaps="false"
+
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.widget.SearchView
+            android:id="@+id/stateListSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customsearchview"
+            android:iconifiedByDefault="false"
+            android:queryHint="Введите название" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filterTabsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/allbtnfilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/customvideofon"
+            android:onClick="allbtnfilterTapped"
+            android:text="Все" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filterTabsLayoutSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/korotkshbtnfilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/customvideofon"
+            android:onClick="korotkshbtnfilterTapped"
+            android:text="Корот" />
+
+        <Button
+            android:id="@+id/bighbtnfilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/customvideofon"
+            android:onClick="bigbtnfilterTapped"
+            android:text="Больш" />
+
+        <Button
+            android:id="@+id/midlebtnfilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/customvideofon"
+            android:onClick="midlebtnfilterTapped"
+            android:text="Сред" />
+
+        <Button
+            android:id="@+id/smallbtnfilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/customvideofon"
+            android:onClick="smallbtnfilterTapped"
+            android:text="мал" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/storozhbtnfilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/customvideofon"
+            android:onClick="storozhbtnfilterTapped"
+            android:text="Служ"
+
+            />
+
+        <Button
+            android:id="@+id/housebtnfilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/customvideofon"
+            android:onClick="housebtnfilterTapped"
+            android:text="Дом" />
+
+        <Button
+            android:id="@+id/dlinnoshbtnfilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/customvideofon"
+            android:onClick="dlinnoshbtnfilterTapped"
+            android:text="Длинн" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/doglistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="multipleChoice" />
+
+
+</LinearLayout>
