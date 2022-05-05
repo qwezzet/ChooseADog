@@ -48,6 +48,8 @@
             android:id="@+id/stateListSearchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/customsearchview"
             android:iconifiedByDefault="false"
             android:queryHint="Введите название" />
@@ -59,103 +61,160 @@
         android:id="@+id/filterTabsLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-        <Button
-            android:id="@+id/allbtnfilter"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+        <android.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
-            android:background="@drawable/customvideofon"
+            android:background="@drawable/customtextview"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Фильтры"
+
+            android:textSize="20sp" />
+
+        <android.widget.Button
+            android:id="@+id/allbtnfilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customtextview2"
             android:onClick="allbtnfilterTapped"
+            android:textSize="18sp"
             android:text="Все" />
 
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/filterTabsLayoutSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/filterTabsLayoutSecond">
+
+
+        <android.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/customtextview"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="Размер"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filterTabsLayoutThird"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/korotkshbtnfilter"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/customvideofon"
-            android:onClick="korotkshbtnfilterTapped"
-            android:text="Корот" />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/bighbtnfilter"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/customvideofon"
+            android:background="@drawable/customtextview2"
             android:onClick="bigbtnfilterTapped"
-            android:text="Больш" />
+            android:text="Больш"
+            android:textSize="12sp"/>
 
-        <Button
+        <android.widget.Button
             android:id="@+id/midlebtnfilter"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/customvideofon"
+            android:background="@drawable/customtextview2"
             android:onClick="midlebtnfilterTapped"
+            android:textSize="12sp"
             android:text="Сред" />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/smallbtnfilter"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/customvideofon"
+            android:background="@drawable/customtextview2"
+            android:textSize="12sp"
             android:onClick="smallbtnfilterTapped"
             android:text="мал" />
 
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/filterTabsLayoutFour">
+
+
+        <android.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/customtextview"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:text="Условия"
+            android:textSize="15sp" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:id="@+id/filterTabsLayoutFive">
 
-        <Button
+        <android.widget.Button
             android:id="@+id/storozhbtnfilter"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/customvideofon"
+            android:background="@drawable/customtextview2"
             android:onClick="storozhbtnfilterTapped"
             android:text="Служ"
 
             />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/housebtnfilter"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/customvideofon"
+            android:background="@drawable/customtextview2"
             android:onClick="housebtnfilterTapped"
             android:text="Дом" />
 
-        <Button
+        <android.widget.Button
             android:id="@+id/dlinnoshbtnfilter"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/customvideofon"
+            android:background="@drawable/customtextview2"
             android:onClick="dlinnoshbtnfilterTapped"
             android:text="Длинн" />
+
+        <android.widget.Button
+            android:id="@+id/korotkshbtnfilter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/customtextview2"
+            android:onClick="korotkshbtnfilterTapped"
+            android:text="Корот" />
     </LinearLayout>
 
     <ListView

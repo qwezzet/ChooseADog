@@ -24,6 +24,9 @@ public class TwoActivity extends AppCompatActivity  {
     SearchView stateListSearchView;
     private LinearLayout filterLinearView1;
     private LinearLayout filterLinearView2;
+    private LinearLayout filterLinearView3;
+    private LinearLayout filterLinearView4;
+    private LinearLayout filterLinearView5;
     private Button filterButton;
     private String selectedFilter = "all";
     private String currentSearchText = "";
@@ -66,6 +69,9 @@ public class TwoActivity extends AppCompatActivity  {
         searchView.setVisibility(View.INVISIBLE);
         filterLinearView1.setVisibility(View.INVISIBLE);
         filterLinearView2.setVisibility(View.INVISIBLE);
+        filterLinearView3.setVisibility(View.INVISIBLE);
+        filterLinearView4.setVisibility(View.INVISIBLE);
+        filterLinearView5.setVisibility(View.INVISIBLE);
         filterButton.setText("Фильтры и поиск");
 
     }
@@ -73,6 +79,10 @@ public class TwoActivity extends AppCompatActivity  {
         searchView.setVisibility(View.VISIBLE);
         filterLinearView1.setVisibility(View.VISIBLE);
         filterLinearView2.setVisibility(View.VISIBLE);
+        filterLinearView3.setVisibility(View.VISIBLE);
+        filterLinearView4.setVisibility(View.VISIBLE);
+        filterLinearView5.setVisibility(View.VISIBLE);
+
         filterButton.setText("Закрыть");
     }
 
@@ -80,6 +90,9 @@ public class TwoActivity extends AppCompatActivity  {
         filterButton = (Button) findViewById(R.id.sortandsearchButton);
         filterLinearView1 = (LinearLayout) findViewById(R.id.filterTabsLayout);
         filterLinearView2 = (LinearLayout) findViewById(R.id.filterTabsLayoutSecond);
+        filterLinearView3 = (LinearLayout) findViewById(R.id.filterTabsLayoutThird);
+        filterLinearView4 = (LinearLayout) findViewById(R.id.filterTabsLayoutFour);
+        filterLinearView5 = (LinearLayout) findViewById(R.id.filterTabsLayoutFive);
 
     }
 
