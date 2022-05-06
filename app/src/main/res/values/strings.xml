@@ -28,4 +28,19 @@
     <string name="forall">Для каждого</string>
     <string name="version">v 1.0.0</string>
     <string name="information">i</string>
+    <string name="_1">1</string>
+    <string name="findandsearch">Поиск и фильтры</string>
+    <string name="filters">Фильтры</string>
+    <string name="all">Все</string>
+    <string name="size">Размер</string>
+    <string name="bigdog">Крупные</string>
+    <string name="midledog">Средние</string>
+    <string name="smalldog">Малые</string>
+    <string name="dogforstreet">Служебные</string>
+    <string name="house">Дом</string>
+    <string name="conditions">Условия</string>
+    <string name="housedog">Домашние</string>
+    <string name="longtype">Длинная</string>
+    <string name="shorttype">Короткая</string>
+    <string name="mixedtype">Смешанная</string>
 </resources>
