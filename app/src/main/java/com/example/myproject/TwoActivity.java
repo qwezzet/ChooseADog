@@ -15,6 +15,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class TwoActivity extends AppCompatActivity  {
 
@@ -145,9 +146,10 @@ public class TwoActivity extends AppCompatActivity  {
 
 
     private void setupData() {
-        State avstrovch = new State("0", "Австралийская овчарка", R.drawable.img_avstr_ovch);
+        String[] some_array = getResources().getStringArray(R.array.dogs);
+        State avstrovch = new State("0",some_array[0], R.drawable.img_avstr_ovch);
         stateList.add(avstrovch);
-        State akitainu = new State("1", "Акита-Ину", R.drawable.img_akita_inu);
+        State akitainu = new State("1", some_array[1], R.drawable.img_akita_inu);
         stateList.add(akitainu);
         State americstafford = new State("2", "Американский стаффордширский терьер", R.drawable.img_americ_stafford);
         stateList.add(americstafford);
@@ -308,7 +310,7 @@ public class TwoActivity extends AppCompatActivity  {
     }
 
     public void storozhbtnfilterTapped(View view) {
-        filterList("Австралийская овчарка");
+
     }
 
     public void housebtnfilterTapped(View view) {
@@ -339,7 +341,7 @@ public class TwoActivity extends AppCompatActivity  {
 
 
     public void showSortTapped(View view) {
-        if (filterHidden == true){
+        if (filterHidden){
             filterHidden = false;
             showFilter();
         }

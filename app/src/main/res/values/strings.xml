@@ -43,4 +43,47 @@
     <string name="longtype">Длинная</string>
     <string name="shorttype">Короткая</string>
     <string name="mixedtype">Смешанная</string>
+    <string name="typeofwool">Шерсть (тип)</string>
+    <string-array name="dogs">
+        <item>Австралийская овчарка</item>
+        <item>Акита-Ину</item>
+        <item>Американский стаффордширский терьер</item>
+        <item>Английский бульдог</item>
+        <item>Бассет-Хаун</item>
+        <item>Бернский зенненхунд</item>
+        <item>Бигль</item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+        <item>            </item>
+    </string-array>
 </resources>

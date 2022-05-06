@@ -238,7 +238,7 @@
                     android:gravity="center"
                     android:paddingTop="7dp"
                     android:paddingBottom="7dp"
-                    android:text="@string/conditions"
+                    android:text="@string/typeofwool"
                     android:textSize="15sp" />
             </LinearLayout>
 
@@ -257,10 +257,11 @@
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
                     android:onClick="dlinnoshbtnfilterTapped"
-                    android:text="@string/longtype" />
+                    android:text="@string/longtype"
+                    tools:ignore="UsingOnClickInXml" />
 
                 <android.widget.Button
-                    android:id="@+id/korotkshbtnfilter"
+                    android:id="@+id/smallshbtnfilter"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
