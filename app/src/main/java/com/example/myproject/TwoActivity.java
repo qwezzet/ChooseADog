@@ -66,12 +66,12 @@ public class TwoActivity extends AppCompatActivity  {
     }
 
     private void hideFilter() {
-        searchView.setVisibility(View.INVISIBLE);
-        filterLinearView1.setVisibility(View.INVISIBLE);
-        filterLinearView2.setVisibility(View.INVISIBLE);
-        filterLinearView3.setVisibility(View.INVISIBLE);
-        filterLinearView4.setVisibility(View.INVISIBLE);
-        filterLinearView5.setVisibility(View.INVISIBLE);
+        searchView.setVisibility(View.GONE);
+        filterLinearView1.setVisibility(View.GONE);
+        filterLinearView2.setVisibility(View.GONE);
+        filterLinearView3.setVisibility(View.GONE);
+        filterLinearView4.setVisibility(View.GONE);
+        filterLinearView5.setVisibility(View.GONE);
         filterButton.setText("Фильтры и поиск");
 
     }
