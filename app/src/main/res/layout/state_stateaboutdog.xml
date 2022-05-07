@@ -15,7 +15,8 @@
             android:layout_height="60dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
-            android:background="@drawable/icon_back" />
+            android:background="@drawable/icon_back"
+            android:contentDescription="@string/all" />
 
         <TextView
             android:id="@+id/dogname"
@@ -39,6 +40,14 @@
         android:layout_gravity="top"
 
 
+        />
+    <TextView
+        android:id="@+id/dogdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
         />
 
 </LinearLayout>

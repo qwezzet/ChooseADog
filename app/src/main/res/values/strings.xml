@@ -44,7 +44,7 @@
     <string name="shorttype">Короткая</string>
     <string name="mixedtype">Смешанная</string>
     <string name="typeofwool">Шерсть (тип)</string>
-    <string-array name="dogs">
+    <string-array name="dogs_names">
         <item>Австралийская овчарка</item>
         <item>Акита-Ину</item>
         <item>Американский стаффордширский терьер</item>
@@ -101,4 +101,61 @@
         <item>Японский шпиц</item>
 
     </string-array>
+    <string-array name="dogs_descs">
+        <item>56344</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>>
 </resources>

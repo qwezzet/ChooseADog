@@ -35,6 +35,11 @@
             android:textSize="17sp"
             android:layout_marginTop="10dp"
             android:text="Название" />
+        <TextView
+            android:id="@id/dogdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"/>
 
 
     </LinearLayout>
