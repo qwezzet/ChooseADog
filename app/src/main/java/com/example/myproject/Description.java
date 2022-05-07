@@ -1,5 +1,6 @@
 package com.example.myproject;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
@@ -14,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Description extends AppCompatActivity {
     Button back;
+    @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

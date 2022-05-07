@@ -1,5 +1,6 @@
 package com.example.myproject;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ public class StateAboutDog extends AppCompatActivity {
     State selectedState;
     Button btntotwo;
 
+    @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -38,9 +40,9 @@ public class StateAboutDog extends AppCompatActivity {
     }
 
     private void setValues() {
-        TextView textView = (TextView) findViewById(R.id.dogname);
-        TextView textView2 = (TextView) findViewById(R.id.dogdescription);
-        ImageView imageView = (ImageView) findViewById(R.id.picture);
+        TextView textView = findViewById(R.id.dogname);
+        TextView textView2 = findViewById(R.id.dogdescription);
+        ImageView imageView = findViewById(R.id.picture);
 
         textView.setText(selectedState.getPoroda());
         textView2.setText(selectedState.getDescription());

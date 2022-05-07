@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/customactivity"
@@ -30,7 +31,7 @@
                 android:layout_marginTop="5dp"
                 android:onClick="showAlertDialogDesk"
                 android:background="@drawable/info_icon"
-                />
+                tools:ignore="UsingOnClickInXml" />
 
         </LinearLayout>
 
@@ -45,7 +46,8 @@
                 android:layout_gravity="right"
                 android:gravity="center"
                 android:text="@string/tabledescription"
-                android:textSize="21sp" />
+                android:textSize="21sp"
+                tools:ignore="RtlHardcoded" />
         </LinearLayout>
     </LinearLayout>
 
@@ -81,7 +83,8 @@
                     android:text="@string/information"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
-                    android:textSize="25sp" />
+                    android:textSize="25sp"
+                    tools:ignore="RtlHardcoded" />
 
                 <TextView
                     android:layout_width="match_parent"

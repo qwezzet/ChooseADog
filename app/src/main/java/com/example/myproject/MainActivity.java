@@ -1,5 +1,6 @@
 package com.example.myproject;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
@@ -15,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
     Button btnhello, btnclose;
 
+    @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showAlertDialogMain(View v) {
+
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Информация о приложении");
         alert.setMessage("-Тут будет информация о приложении-");

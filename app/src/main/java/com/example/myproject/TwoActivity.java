@@ -1,5 +1,6 @@
 package com.example.myproject;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -36,6 +37,7 @@ public class TwoActivity extends AppCompatActivity  {
     boolean filterHidden = true;
 
 
+    @SuppressLint("SourceLockedOrientationActivity")
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,14 +92,14 @@ public class TwoActivity extends AppCompatActivity  {
     }
 
     private void initWidgets() {
-        filterButton = (Button) findViewById(R.id.sortandsearchButton);
-        filterLinearView1 = (LinearLayout) findViewById(R.id.filterTabsLayout);
-        filterLinearView2 = (LinearLayout) findViewById(R.id.filterTabsLayoutSecond);
-        filterLinearView3 = (LinearLayout) findViewById(R.id.filterTabsLayoutThird);
-        filterLinearView4 = (LinearLayout) findViewById(R.id.filterTabsLayoutFour);
-        filterLinearView5 = (LinearLayout) findViewById(R.id.filterTabsLayoutFive);
-        filterLinearView6 = (LinearLayout) findViewById(R.id.filterTabsLayoutSix);
-        filterLinearView7 = (LinearLayout) findViewById(R.id.filterTabsLayoutSeven);
+        filterButton = findViewById(R.id.sortandsearchButton);
+        filterLinearView1 = findViewById(R.id.filterTabsLayout);
+        filterLinearView2 = findViewById(R.id.filterTabsLayoutSecond);
+        filterLinearView3 = findViewById(R.id.filterTabsLayoutThird);
+        filterLinearView4 = findViewById(R.id.filterTabsLayoutFour);
+        filterLinearView5 = findViewById(R.id.filterTabsLayoutFive);
+        filterLinearView6 = findViewById(R.id.filterTabsLayoutSix);
+        filterLinearView7 = findViewById(R.id.filterTabsLayoutSeven);
 
     }
 
@@ -105,7 +107,7 @@ public class TwoActivity extends AppCompatActivity  {
 
 
     private void initSearchWidgets() {
-        searchView = (SearchView) findViewById(R.id.stateListSearchView);
+        searchView = findViewById(R.id.stateListSearchView);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
@@ -259,7 +261,7 @@ public class TwoActivity extends AppCompatActivity  {
 
 
     private void setupList() {
-        listView = (ListView) findViewById(R.id.doglistview);
+        listView = findViewById(R.id.doglistview);
         StateAdapter dogadapter = new StateAdapter(getApplicationContext(), 0, stateList);
         listView.setAdapter(dogadapter);
     }
@@ -309,7 +311,7 @@ public class TwoActivity extends AppCompatActivity  {
     }
 
     public void housebtnfilterTapped(View view) {
-        filterList("Бигль");
+        filterList("avstrovch");
     }
 
     public void dlinnoshbtnfilterTapped(View view) {

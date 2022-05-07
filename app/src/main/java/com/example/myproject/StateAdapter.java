@@ -22,9 +22,9 @@ public class StateAdapter extends ArrayAdapter<State> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-        TextView textView = (TextView) convertView.findViewById(R.id.dogname);
-        TextView textView2 = (TextView) convertView.findViewById(R.id.dogdescription);
-        ImageView imageView = (ImageView) convertView.findViewById(R.id.picture);
+        TextView textView = convertView.findViewById(R.id.dogname);
+        TextView textView2 = convertView.findViewById(R.id.dogdescription);
+        ImageView imageView = convertView.findViewById(R.id.picture);
 
         textView.setText(state.getPoroda());
         textView2.setText(state.getDescription());
