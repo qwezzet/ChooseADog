@@ -5,12 +5,10 @@ import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -35,13 +33,10 @@ public class Description extends AppCompatActivity {
 
 
         back = findViewById(R.id.btnfromvideototable);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Description.this,Table.class);
-                startActivity(i);
-                back.setTextColor(Color.GRAY);
-            }
+        back.setOnClickListener(v -> {
+            Intent i = new Intent(Description.this,Table.class);
+            startActivity(i);
+            back.setTextColor(Color.GRAY);
         });
     }
 }

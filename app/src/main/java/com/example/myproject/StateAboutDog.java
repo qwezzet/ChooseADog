@@ -3,12 +3,10 @@ package com.example.myproject;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,21 +22,19 @@ public class StateAboutDog extends AppCompatActivity {
         getSelectedState();
         setValues();
         ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
         actionBar.hide();
         btntotwo = findViewById(R.id.btnfromstatetotwo);
-        btntotwo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(StateAboutDog.this, TwoActivity.class);
-                startActivity(i);
-            }
+        btntotwo.setOnClickListener(v -> {
+            Intent i = new Intent(StateAboutDog.this, TwoActivity.class);
+            startActivity(i);
         });
     }
 
     private void getSelectedState() {
         Intent prevIntent = getIntent();
         String parsStringID = prevIntent.getStringExtra("id");
-        selectedState = TwoActivity.stateList.get(Integer.valueOf(parsStringID));
+        selectedState = TwoActivity.stateList.get(Integer.parseInt(parsStringID));
     }
 
     private void setValues() {
