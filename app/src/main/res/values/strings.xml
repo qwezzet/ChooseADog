@@ -68,6 +68,7 @@
     <string name="shorttype">Короткая</string>
     <string name="mixedtype">Смешанная</string>
     <string name="typeofwool">Шерсть (тип)</string>
+    <string name="name">Название</string>
     <string-array name="dogs_names">
         <item>Австралийская овчарка</item>
         <item>Акита-Ину</item>
@@ -126,7 +127,7 @@
 
     </string-array>
     <string-array name="dogs_descs">
-        <item></item>
+        <item>5466521365416510651053105612065106510650562085205252525285528520525208520525252520520</item>
         <item></item>
         <item></item>
         <item></item>

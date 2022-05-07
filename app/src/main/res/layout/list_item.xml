@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
@@ -14,9 +15,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-
-
-        />
+        android:contentDescription="@string/_1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,12 +33,15 @@
             android:layout_marginStart="12dp"
             android:textSize="17sp"
             android:layout_marginTop="10dp"
-            android:text="Название" />
-        <TextView
+            android:text="@string/name" />
+        <android.widget.TextView
             android:id="@id/dogdescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="10dp"/>
+            android:textSize="12sp"
+            android:layout_marginStart="20sp"
+            android:background="@drawable/customnone"
+            tools:ignore="SmallSp" />
 
 
     </LinearLayout>
