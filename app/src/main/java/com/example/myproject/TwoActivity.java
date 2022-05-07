@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -15,11 +14,11 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class TwoActivity extends AppCompatActivity  {
 
-    public static ArrayList<State> stateList = new ArrayList<State>();
+    public static ArrayList<State> stateList = new ArrayList<>();
     private ListView listView;
     ImageButton tabl;
     SearchView stateListSearchView;
@@ -47,6 +46,7 @@ public class TwoActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_two);
 
         ActionBar actionBar = getSupportActionBar();
+        assert actionBar != null;
         actionBar.hide();
         setupData();
         initWidgets();
@@ -57,12 +57,9 @@ public class TwoActivity extends AppCompatActivity  {
 
         tabl = findViewById(R.id.btntotbl);
         stateListSearchView = findViewById(R.id.stateListSearchView);
-        tabl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(TwoActivity.this, Table.class);
-                startActivity(i);
-            }
+        tabl.setOnClickListener(v -> {
+            Intent i = new Intent(TwoActivity.this, Table.class);
+            startActivity(i);
         });
 
 
@@ -120,7 +117,7 @@ public class TwoActivity extends AppCompatActivity  {
 
                 currentSearchText = s;
 
-                ArrayList<State> filteredStates = new ArrayList<State>();
+                ArrayList<State> filteredStates = new ArrayList<>();
 
                 for (State state : stateList) {
                     if (state.getPoroda().toLowerCase().contains(s.toLowerCase())) {
@@ -151,109 +148,109 @@ public class TwoActivity extends AppCompatActivity  {
         stateList.add(avstrovch);
         State akitainu = new State("1", some_array[1], R.drawable.img_akita_inu);
         stateList.add(akitainu);
-        State americstafford = new State("2", "Американский стаффордширский терьер", R.drawable.img_americ_stafford);
+        State americstafford = new State("2", some_array[2], R.drawable.img_americ_stafford);
         stateList.add(americstafford);
-        State englbulldog = new State("3", "Английский бульдог", R.drawable.img_engl_bulldog);
+        State englbulldog = new State("3", some_array[3], R.drawable.img_engl_bulldog);
         stateList.add(englbulldog);
-        State bassethaund = new State("4", "Бассет-Хаунд", R.drawable.img_basset_haund);
+        State bassethaund = new State("4", some_array[4], R.drawable.img_basset_haund);
         stateList.add(bassethaund);
-        State burnzennen = new State("5", "Бернский зенненхунд", R.drawable.img_burn_zennen);
+        State burnzennen = new State("5", some_array[5], R.drawable.img_burn_zennen);
         stateList.add(burnzennen);
-        State bigl = new State("6", "Бигль", R.drawable.img_bigl);
+        State bigl = new State("6", some_array[6], R.drawable.img_bigl);
         stateList.add(bigl);
-        State velshkorgi = new State("7", "Вельш-корги", R.drawable.img_velsh_korgi);
+        State velshkorgi = new State("7", some_array[7], R.drawable.img_velsh_korgi);
         stateList.add(velshkorgi);
-        State vesteuovcharka = new State("8", "Восточноевропейская овчарка", R.drawable.img_vesteu_ovcharka);
+        State vesteuovcharka = new State("8", some_array[8], R.drawable.img_vesteu_ovcharka);
         stateList.add(vesteuovcharka);
-        State gavanbishon = new State("9", "Гаванский бишон", R.drawable.img_gavan_bishon);
+        State gavanbishon = new State("9", some_array[9], R.drawable.img_gavan_bishon);
         stateList.add(gavanbishon);
-        State dolmatin = new State("10", "Далматин", R.drawable.img_dolmatin);
+        State dolmatin = new State("10", some_array[10], R.drawable.img_dolmatin);
         stateList.add(dolmatin);
-        State doberman = new State("11", "Доберман", R.drawable.img_doberman);
+        State doberman = new State("11", some_array[11], R.drawable.img_doberman);
         stateList.add(doberman);
-        State zapadsiblaika = new State("12", "Западносибирская лайка", R.drawable.img_zapadsib_laika);
+        State zapadsiblaika = new State("12", some_array[12], R.drawable.img_zapadsib_laika);
         stateList.add(zapadsiblaika);
-        State goldretriver = new State("13", "Золотистый ретривер", R.drawable.img_gold_retriver);
+        State goldretriver = new State("13", some_array[13], R.drawable.img_gold_retriver);
         stateList.add(goldretriver);
-        State irelandvolkodav = new State("14", "Ирландский волкодав", R.drawable.img_ireland_volkodav);
+        State irelandvolkodav = new State("14", some_array[14], R.drawable.img_ireland_volkodav);
         stateList.add(irelandvolkodav);
-        State spanishmastif = new State("15", "Испанский мастиф", R.drawable.img_spanish_mastif);
+        State spanishmastif = new State("15", some_array[15], R.drawable.img_spanish_mastif);
         stateList.add(spanishmastif);
-        State iorkterrer = new State("16", "Йоркширский терьер", R.drawable.img_iork_terrer);
+        State iorkterrer = new State("16", some_array[16], R.drawable.img_iork_terrer);
         stateList.add(iorkterrer);
-        State kavkazovcharka = new State("17", "Кавказская овчарка", R.drawable.img_kavkaz_ovcharka);
+        State kavkazovcharka = new State("17", some_array[17], R.drawable.img_kavkaz_ovcharka);
         stateList.add(kavkazovcharka);
-        State kanecorso = new State("18", "Кане-корсо", R.drawable.img_kane_corso);
+        State kanecorso = new State("18", some_array[18], R.drawable.img_kane_corso);
         stateList.add(kanecorso);
-        State chinahohl = new State("19", "Китайская хохлатая", R.drawable.img_china_hohl);
+        State chinahohl = new State("19", some_array[19], R.drawable.img_china_hohl);
         stateList.add(chinahohl);
-        State komandor = new State("20", "Комондор", R.drawable.img_komandor);
+        State komandor = new State("20", some_array[20], R.drawable.img_komandor);
         stateList.add(komandor);
-        State labladorretr = new State("21", "Лабрадор-ретривер", R.drawable.img_lablador_retr);
+        State labladorretr = new State("21", some_array[21], R.drawable.img_lablador_retr);
         stateList.add(labladorretr);
-        State leonberger = new State("22", "Леонбергер", R.drawable.img_leonberger);
+        State leonberger = new State("22", some_array[22], R.drawable.img_leonberger);
         stateList.add(leonberger);
-        State maltabalon = new State("23", "Мальтийская болонка", R.drawable.img_malta_balon);
+        State maltabalon = new State("23", some_array[23], R.drawable.img_malta_balon);
         stateList.add(maltabalon);
-        State mops = new State("24", "Мопс", R.drawable.img_mops);
+        State mops = new State("24", some_array[24], R.drawable.img_mops);
         stateList.add(mops);
-        State doichovcharka = new State("25", "Немецкая овчарка", R.drawable.img_doich_ovcharka);
+        State doichovcharka = new State("25", some_array[25], R.drawable.img_doich_ovcharka);
         stateList.add(doichovcharka);
-        State doichbokser = new State("26", "Немецкий боксер", R.drawable.img_doich_bokser);
+        State doichbokser = new State("26", some_array[26], R.drawable.img_doich_bokser);
         stateList.add(doichbokser);
-        State doichdog = new State("27", "Немецкий дог", R.drawable.img_doich_dog);
+        State doichdog = new State("27", some_array[27], R.drawable.img_doich_dog);
         stateList.add(doichdog);
-        State newfoundland = new State("28", "Ньюфаундленд", R.drawable.img_newfoundland);
+        State newfoundland = new State("28", some_array[28], R.drawable.img_newfoundland);
         stateList.add(newfoundland);
-        State pekines = new State("29", "Пекинес", R.drawable.img_pekines);
+        State pekines = new State("29", some_array[29], R.drawable.img_pekines);
         stateList.add(pekines);
-        State pomeranskshpic = new State("30", "Померанский шпиц", R.drawable.img_pomeransk_shpic);
+        State pomeranskshpic = new State("30", some_array[30], R.drawable.img_pomeransk_shpic);
         stateList.add(pomeranskshpic);
-        State pudel = new State("31", "Пудель", R.drawable.img_pudel);
+        State pudel = new State("31", some_array[31], R.drawable.img_pudel);
         stateList.add(pudel);
-        State rizenshaunzer = new State("32", "Ризеншнауцер", R.drawable.img_rizenshaunzer);
+        State rizenshaunzer = new State("32", some_array[32], R.drawable.img_rizenshaunzer);
         stateList.add(rizenshaunzer);
-        State rotveiler = new State("33", "Ротвейлер", R.drawable.img_rotveiler);
+        State rotveiler = new State("33", some_array[33], R.drawable.img_rotveiler);
         stateList.add(rotveiler);
-        State russianborzya = new State("34", "Русская псовая борзая", R.drawable.img_russian_borzya);
+        State russianborzya = new State("34", some_array[34], R.drawable.img_russian_borzya);
         stateList.add(russianborzya);
-        State russiantoi = new State("35", "Русский той", R.drawable.img_russian_toi);
+        State russiantoi = new State("35", some_array[35], R.drawable.img_russian_toi);
         stateList.add(russiantoi);
-        State samoed = new State("36", "Самоед", R.drawable.img_samoed);
+        State samoed = new State("36", some_array[36], R.drawable.img_samoed);
         stateList.add(samoed);
-        State senbernar = new State("37", "Сенбернар", R.drawable.img_senbernar);
+        State senbernar = new State("37", some_array[37], R.drawable.img_senbernar);
         stateList.add(senbernar);
-        State taksa = new State("38", "Такса", R.drawable.img_taksa);
+        State taksa = new State("38", some_array[38], R.drawable.img_taksa);
         stateList.add(taksa);
-        State tibetskimastif = new State("39", "Тибетский мастиф", R.drawable.img_tibetski_mastif);
+        State tibetskimastif = new State("39", some_array[39], R.drawable.img_tibetski_mastif);
         stateList.add(tibetskimastif);
-        State uippet = new State("40", "Уиппет", R.drawable.img_uippet);
+        State uippet = new State("40", some_array[40], R.drawable.img_uippet);
         stateList.add(uippet);
-        State pharaondog = new State("41", "Фараонова собака", R.drawable.img_pharaon_dog);
+        State pharaondog = new State("41", some_array[41], R.drawable.img_pharaon_dog);
         stateList.add(pharaondog);
-        State francebulldog = new State("42", "Французский бульдог", R.drawable.img_france_bulldog);
+        State francebulldog = new State("42", some_array[42], R.drawable.img_france_bulldog);
         stateList.add(francebulldog);
-        State hovavart = new State("43", "Ховаварт", R.drawable.img_hovavart);
+        State hovavart = new State("43", some_array[43], R.drawable.img_hovavart);
         stateList.add(hovavart);
-        State cvergshnaucer = new State("44", "Цвергшнауцер", R.drawable.img_cvergshnaucer);
+        State cvergshnaucer = new State("44", some_array[44], R.drawable.img_cvergshnaucer);
         stateList.add(cvergshnaucer);
-        State chauchau = new State("45", "Чау-чау", R.drawable.img_chau_chau);
+        State chauchau = new State("45", some_array[45], R.drawable.img_chau_chau);
         stateList.add(chauchau);
-        State blackterrer = new State("46", "Черный терьер", R.drawable.img_black_terrer);
+        State blackterrer = new State("46", some_array[46], R.drawable.img_black_terrer);
         stateList.add(blackterrer);
-        State chihuahua = new State("47", "Чихуахуа", R.drawable.img_chihuahua);
+        State chihuahua = new State("47", some_array[47], R.drawable.img_chihuahua);
         stateList.add(chihuahua);
-        State sharpay = new State("48", "Шарпей", R.drawable.img_sharpay);
+        State sharpay = new State("48", some_array[48], R.drawable.img_sharpay);
         stateList.add(sharpay);
-        State shitsu = new State("49", "Ши-тцу", R.drawable.img_shi_tsu);
+        State shitsu = new State("49", some_array[49], R.drawable.img_shi_tsu);
         stateList.add(shitsu);
-        State elderterrer = new State("50", "Эрдельтерьер", R.drawable.img_elder_terrer);
+        State elderterrer = new State("50", some_array[50], R.drawable.img_elder_terrer);
         stateList.add(elderterrer);
-        State dogwithblackmouth = new State("51", "Южнорусская овчарка", R.drawable.img_dogwithblackmouth);
+        State dogwithblackmouth = new State("51", some_array[51], R.drawable.img_dogwithblackmouth);
         stateList.add(dogwithblackmouth);
-        State japanesexin = new State("52", "Японский хин", R.drawable.img_japanese_xin);
+        State japanesexin = new State("52", some_array[52], R.drawable.img_japanese_xin);
         stateList.add(japanesexin);
-        State japaneseshpic = new State("53", "Японский шпиц", R.drawable.img_japanese_shpic);
+        State japaneseshpic = new State("53", some_array[53], R.drawable.img_japanese_shpic);
         stateList.add(japaneseshpic);
 
 
@@ -268,14 +265,11 @@ public class TwoActivity extends AppCompatActivity  {
 
 
     private void setupOnClickListener() {
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                State selectedState = (State) (listView.getItemAtPosition(position));
-                Intent showDeital = new Intent(getApplicationContext(), StateAboutDog.class);
-                showDeital.putExtra("id", selectedState.getId());
-                startActivity(showDeital);
-            }
+        listView.setOnItemClickListener((adapterView, view, position, l) -> {
+            State selectedState = (State) (listView.getItemAtPosition(position));
+            Intent showDeital = new Intent(getApplicationContext(), StateAboutDog.class);
+            showDeital.putExtra("id", selectedState.getId());
+            startActivity(showDeital);
         });
     }
 
@@ -284,10 +278,10 @@ public class TwoActivity extends AppCompatActivity  {
 
     private void filterList(String status) {
         selectedFilter = status;
-        ArrayList<State> filteredStates = new ArrayList<State>();
+        ArrayList<State> filteredStates = new ArrayList<>();
         for (State state : stateList) {
             if (state.getPoroda().toLowerCase().contains(status)) {
-                if (currentSearchText == "") {
+                if (currentSearchText.equals("")) {
                     filteredStates.add(state);
                 } else {
                     if (state.getPoroda().toLowerCase().contains(currentSearchText.toLowerCase())) {
@@ -314,7 +308,7 @@ public class TwoActivity extends AppCompatActivity  {
     }
 
     public void housebtnfilterTapped(View view) {
-        filterList("Австралийская овчарка");
+        filterList("Бигль");
     }
 
     public void dlinnoshbtnfilterTapped(View view) {
