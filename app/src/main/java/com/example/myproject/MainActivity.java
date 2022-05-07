@@ -37,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showAlertDialogMain(View v) {
-
+        String[] arrayAlert = getResources().getStringArray(R.array.mainarray);
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setTitle("Информация о приложении");
-        alert.setMessage("-Тут будет информация о приложении-");
-        alert.setPositiveButton("Скрыть", (dialogInterface, i) -> Toast.makeText(MainActivity.this, "С уважением от разработчика!", Toast.LENGTH_SHORT).show());
+        alert.setTitle(arrayAlert[0]);
+        alert.setMessage(arrayAlert[1]);
+        alert.setPositiveButton(arrayAlert[2], (dialogInterface, i) -> Toast.makeText(MainActivity.this, arrayAlert[3], Toast.LENGTH_SHORT).show());
         alert.create().show();
     }
 }

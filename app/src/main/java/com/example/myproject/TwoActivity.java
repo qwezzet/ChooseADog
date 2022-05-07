@@ -68,6 +68,7 @@ public class TwoActivity extends AppCompatActivity  {
     }
 
     private void hideFilter() {
+        String[] arayofe = getResources().getStringArray(R.array.two2);
         searchView.setVisibility(View.GONE);
         filterLinearView1.setVisibility(View.GONE);
         filterLinearView2.setVisibility(View.GONE);
@@ -76,10 +77,11 @@ public class TwoActivity extends AppCompatActivity  {
         filterLinearView5.setVisibility(View.GONE);
         filterLinearView6.setVisibility(View.GONE);
         filterLinearView7.setVisibility(View.GONE);
-        filterButton.setText("Фильтры и поиск");
+        filterButton.setText(arayofe[0]);
 
     }
     private void showFilter() {
+        String[] arayofe = getResources().getStringArray(R.array.two2);
         searchView.setVisibility(View.VISIBLE);
         filterLinearView1.setVisibility(View.VISIBLE);
         filterLinearView2.setVisibility(View.VISIBLE);
@@ -88,7 +90,7 @@ public class TwoActivity extends AppCompatActivity  {
         filterLinearView5.setVisibility(View.VISIBLE);
         filterLinearView6.setVisibility(View.VISIBLE);
         filterLinearView7.setVisibility(View.VISIBLE);
-        filterButton.setText("Закрыть");
+        filterButton.setText(arayofe[1]);
     }
 
     private void initWidgets() {
