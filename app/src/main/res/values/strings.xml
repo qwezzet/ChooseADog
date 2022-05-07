@@ -69,6 +69,9 @@
     <string name="mixedtype">Смешанная</string>
     <string name="typeofwool">Шерсть (тип)</string>
     <string name="name">Название</string>
+    <string name="start">Начать!</string>
+    <string name="aboutthis">О приложении</string>
+    <string name="exit">Выход</string>
     <string-array name="dogs_names">
         <item>Австралийская овчарка</item>
         <item>Акита-Ину</item>

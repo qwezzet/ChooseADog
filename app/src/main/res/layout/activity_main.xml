@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/customactivity"
@@ -20,7 +21,8 @@
         android:layout_width="match_parent"
         android:layout_height="330dp"
         android:layout_marginTop="-10dp"
-        android:src="@drawable/mainphoto1" />
+        android:src="@drawable/mainphoto1"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:layout_width="match_parent"
@@ -49,7 +51,7 @@
             android:layout_marginTop="45dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/custombtnsearch"
-            android:text="Начать!"
+            android:text="@string/start"
             android:textAllCaps="false"
             android:textColor="#3C3C3C"
             android:textSize="25sp" />
@@ -63,11 +65,12 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/custombtnsearch"
-            android:text="О приложении"
+            android:text="@string/aboutthis"
             android:onClick="showAlertDialogMain"
             android:textAllCaps="false"
             android:textColor="#3C3C3C"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            tools:ignore="UsingOnClickInXml" />
 
         <android.widget.Button
             android:id="@+id/btnexit"
@@ -78,7 +81,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/custombtnsearch"
-            android:text="Выход"
+            android:text="@string/exit"
             android:textAllCaps="false"
             android:textColor="#3C3C3C"
             android:textSize="25sp" />

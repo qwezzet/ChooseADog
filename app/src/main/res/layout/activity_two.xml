@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/customphotomain"
-            android:contentDescription="@string/_1"
+            tools:ignore="ContentDescription"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
             android:src="@drawable/tablephoto1" />
@@ -36,7 +36,8 @@
             android:text="@string/findandsearch"
             android:textAllCaps="false"
 
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="UsingOnClickInXml" />
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -96,7 +97,8 @@
                     android:background="@drawable/customtextview2"
                     android:onClick="allbtnfilterTapped"
                     android:text="@string/all"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    tools:ignore="UsingOnClickInXml" />
 
 
             </LinearLayout>
@@ -139,7 +141,8 @@
                     android:background="@drawable/customtextview2"
                     android:onClick="bigbtnfilterTapped"
                     android:text="@string/bigdog"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:ignore="UsingOnClickInXml" />
 
                 <android.widget.Button
                     android:id="@+id/midlebtnfilter"
@@ -151,7 +154,8 @@
                     android:background="@drawable/customtextview2"
                     android:onClick="midlebtnfilterTapped"
                     android:text="@string/midledog"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:ignore="UsingOnClickInXml" />
 
                 <android.widget.Button
                     android:id="@+id/smallbtnfilter"
@@ -163,7 +167,8 @@
                     android:background="@drawable/customtextview2"
                     android:onClick="smallbtnfilterTapped"
                     android:text="@string/smalldog"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:ignore="UsingOnClickInXml" />
 
 
             </LinearLayout>
@@ -206,7 +211,7 @@
                     android:onClick="storozhbtnfilterTapped"
                     android:text="@string/dogforstreet"
 
-                    />
+                    tools:ignore="UsingOnClickInXml" />
 
                 <android.widget.Button
                     android:id="@+id/housebtnfilter"
@@ -217,7 +222,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
                     android:onClick="housebtnfilterTapped"
-                    android:text="@string/housedog" />
+                    android:text="@string/housedog"
+                    tools:ignore="UsingOnClickInXml" />
 
             </LinearLayout>
 
@@ -269,7 +275,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
                     android:onClick="korotkshbtnfilterTapped"
-                    android:text="@string/shorttype" />
+                    android:text="@string/shorttype"
+                    tools:ignore="UsingOnClickInXml" />
 
                 <android.widget.Button
                     android:id="@+id/smeshbtnfilter"
@@ -280,7 +287,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
                     android:onClick="korotkshbtnfilterTapped"
-                    android:text="@string/mixedtype" />
+                    android:text="@string/mixedtype"
+                    tools:ignore="UsingOnClickInXml" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
