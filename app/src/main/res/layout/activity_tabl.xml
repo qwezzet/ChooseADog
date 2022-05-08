@@ -172,9 +172,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Той-терьер,
-                                Чихуахуа,
-                                Мини-Йорк, Бишон Фризе"
+                                android:text="@string/dogs1"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -389,8 +387,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Мальтезе, Ойрк-терьер, Японский хин,
-                                Бивер, Померанский шпиц"
+                                android:text="@string/dogs2"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -564,7 +561,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/gray">
+                    android:background="@color/gray"
+                    tools:ignore="TooManyViews">
 
                 </LinearLayout>
 
@@ -607,7 +605,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Такса, Карликовый пинчер, Пудель, Китайская хохлатая, Мопс, Той "
+                                android:text="@string/dogs3"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -769,10 +767,11 @@
                     android:layout_marginRight="25dp"
                     android:background="@drawable/custombtnsearch2"
                     android:onClick="showAlertDialogInform2"
-                    android:text="i"
+                    android:text="@string/information"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
-                    android:textSize="25sp" />
+                    android:textSize="25sp"
+                    tools:ignore="RtlHardcoded,UsingOnClickInXml" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -826,7 +825,7 @@
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="151dp">
 
 
@@ -858,8 +857,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Мопс, Пекинес, Французский бульдог, Чихуапс,
-                                 Тибетский спаниель "
+                                android:text="@string/dogs4"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -1030,7 +1028,7 @@
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="151dp">
 
 
@@ -1064,7 +1062,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Карликовый пинчер, Пудель, Мальтипу, Черный терьер, Сен-Бердудель"
+                                android:text="@string/dogs5"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -1244,7 +1242,7 @@
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="151dp">
 
 
@@ -1278,7 +1276,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Вест хайленд, Джек-Рассел, Кокер спаниель, Уиппет, Самоедская собака"
+                                android:text="@string/dogs6"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -1440,10 +1438,11 @@
                     android:layout_marginRight="25dp"
                     android:background="@drawable/custombtnsearch2"
                     android:onClick="showAlertDialogInform3"
-                    android:text="i"
+                    android:text="@string/information"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
-                    android:textSize="25sp" />
+                    android:textSize="25sp"
+                    tools:ignore="RtlHardcoded,UsingOnClickInXml" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -1497,7 +1496,7 @@
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="151dp">
 
 
@@ -1531,8 +1530,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Французский бульдог, Английский бульдог, Бостон терьер, Бультерьер,
-                                 Кане-Корсо"
+                                android:text="@string/dogs7"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -1697,7 +1695,6 @@
                         android:layout_marginRight="140dp"
                         android:background="@drawable/custombtnsearch"
                         android:gravity="center"
-                        android:paddingLeft="15dp"
                         android:text="@string/m45"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -1714,7 +1711,7 @@
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="151dp">
 
 
@@ -1748,8 +1745,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Бигль, Спаниель, Бассет-Хаунд, Дачвеллер, Кокер,
-                                Керн-терьер"
+                                android:text="@string/dogs8"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -1913,7 +1909,6 @@
                         android:layout_marginRight="140dp"
                         android:background="@drawable/custombtnsearch"
                         android:gravity="center"
-                        android:paddingStart="15dp"
                         android:text="@string/m47"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -1930,7 +1925,7 @@
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="151dp">
 
 
@@ -1962,9 +1957,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Бордер Колли,
-                                 Уиппет, Бигль,
-                                 Пойнтер, Шелти, Шипперке, Сиба-Ину"
+                                android:text="@string/dogs9"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -2116,10 +2109,11 @@
                     android:layout_marginRight="25dp"
                     android:background="@drawable/custombtnsearch2"
                     android:onClick="showAlertDialogInform4"
-                    android:text="i"
+                    android:text="@string/information"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
-                    android:textSize="25sp" />
+                    android:textSize="25sp"
+                    tools:ignore="RtlHardcoded,UsingOnClickInXml" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -2157,7 +2151,6 @@
                         android:layout_marginRight="140dp"
                         android:background="@drawable/custombtnsearch"
                         android:gravity="center"
-                        android:paddingLeft="15dp"
                         android:text="@string/m50"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -2174,7 +2167,7 @@
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="151dp">
 
 
@@ -2206,7 +2199,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Английский бульдог, Шарпей, Босерон, Бультерьер, Тоса-Ину, Питбультерьер "
+                                android:text="@string/dogs10"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -2361,7 +2354,6 @@
                         android:layout_marginRight="140dp"
                         android:background="@drawable/custombtnsearch"
                         android:gravity="center"
-                        android:paddingStart="15dp"
                         android:text="@string/l55"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -2378,7 +2370,7 @@
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="151dp">
 
 
@@ -2412,7 +2404,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Стаффоршидский терьер, Лабрадор, Ретривер, Бультерьер, Ховаварт"
+                                android:text="@string/dogs11"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -2577,7 +2569,6 @@
                         android:layout_marginRight="140dp"
                         android:background="@drawable/custombtnsearch"
                         android:gravity="center"
-                        android:paddingStart="15dp"
                         android:text="@string/l65"
                         android:textSize="20sp" />
                 </LinearLayout>
@@ -2594,7 +2585,7 @@
                     android:layout_height="wrap_content">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="151dp">
 
 
@@ -2628,8 +2619,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="Ротвейлер, Боксер,
-                                Кане Корсо, Маламут, Сеттер, Немецкая овчарка"
+                                android:text="@string/dogs12"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
