@@ -4,16 +4,22 @@ public class State {
 
     private String id;
     private String poroda;
+    private String secondporoda;
     private String description;
     private int imagedog;
 
-    public State(String id, String poroda,String description,int imagedog) {
+    public State(String id, String poroda, String secondporoda,String description,int imagedog) {
 
         this.id = id;
         this.poroda = poroda;
+        this.secondporoda = secondporoda;
         this.description = description ;
         this.imagedog = imagedog;
     }
+
+    public String getSecondporoda() { return secondporoda; }
+
+    public void setSecondporoda(String secondporoda) { this.secondporoda = secondporoda; }
 
     public String getDescription() {return description; }
 

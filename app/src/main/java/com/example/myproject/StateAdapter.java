@@ -24,10 +24,12 @@ public class StateAdapter extends ArrayAdapter<State> {
 
         TextView textView = convertView.findViewById(R.id.dogname);
         TextView textView2 = convertView.findViewById(R.id.dogdescription);
+        TextView textView3 = convertView.findViewById(R.id.dogsecondporoda);
         ImageView imageView = convertView.findViewById(R.id.picture);
 
         textView.setText(state.getPoroda());
         textView2.setText(state.getDescription());
+        textView3.setText(state.getSecondporoda());
         imageView.setImageResource(state.getImagedog());
 
 

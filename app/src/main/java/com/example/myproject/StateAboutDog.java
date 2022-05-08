@@ -42,10 +42,12 @@ public class StateAboutDog extends AppCompatActivity {
     private void setValues() {
         TextView textView = findViewById(R.id.dogname);
         TextView textView2 = findViewById(R.id.dogdescription);
+        TextView textView3 = findViewById(R.id.dogsecondporoda);
         ImageView imageView = findViewById(R.id.picture);
 
         textView.setText(selectedState.getPoroda());
         textView2.setText(selectedState.getDescription());
+        textView3.setText(selectedState.getSecondporoda());
         imageView.setImageResource(selectedState.getImagedog());
     }
 }

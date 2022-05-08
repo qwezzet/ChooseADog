@@ -43,6 +43,12 @@
             android:layout_marginStart="20sp"
             android:background="@drawable/customnone"
             tools:ignore="SmallSp" />
+        <android.widget.TextView
+            android:id="@id/dogsecondporoda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginStart="12sp" />
 
 
     </LinearLayout>

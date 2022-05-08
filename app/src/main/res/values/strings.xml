@@ -141,7 +141,63 @@
     <string name="dogs12">Ротвейлер, Боксер, Кане Корсо, Маламут, Сеттер, Немецкая овчарка</string>
     <string name="tabledescription">Добро пожаловать в таблицу размеров, именно здесь вы найдете нужную информацию о росте и размере породы</string>
     <string-array name="dogs_descs">
-        <item>5466521365416510651053105612065106510650562085205252525285528520525208520525252520520</item>
+        <item>Акита как</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="dogs_secondnames">
+        <item>Акита как</item>
         <item></item>
         <item></item>
         <item></item>
