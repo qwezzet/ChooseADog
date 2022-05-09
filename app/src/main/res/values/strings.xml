@@ -194,62 +194,64 @@
         <item></item>
         <item></item>
         <item></item>
-        <item></item>
+        <item>2</item>
     </string-array>
     <string-array name="dogs_secondnames">
-        <item>( Акита, Гага, Мага )</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>( Аусси )</item>
+        <item>( Японская акита )</item>
+        <item>( АСТ, Амстафф, Стаффордширский терьер)</item>
+        <item>( Бульдог, Британский бульдог)</item>
+        <item>( Бассет )</item>
+        <item>( Бернская овчарка, Берн )</item>
+        <item>( Бигль Харьер )</item>
+        <item>( Пемброк, Корги, Кардиган )</item>
+        <item>( ВЕО, Восточник)</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>()</item>
+        <item>(1)</item>
+
+
     </string-array>>
 </resources>
