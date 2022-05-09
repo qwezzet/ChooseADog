@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/customactivity"
     android:orientation="vertical">
 
@@ -33,28 +34,32 @@
             />
     </LinearLayout>
 
-    <ImageView
-        android:layout_marginTop="15dp"
-        android:id="@+id/picture"
-        android:layout_width="match_parent"
-        android:layout_height="259dp"
-        android:layout_gravity="top"
-        tools:ignore="ContentDescription" />
-    <TextView
-        android:id="@+id/dogdescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
-        />
+
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="259dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="15dp"
+            tools:ignore="ContentDescription" />
+
+
     <TextView
         android:id="@+id/dogsecondporoda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
-        />
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/dogdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp" />
+
 
 </LinearLayout>
