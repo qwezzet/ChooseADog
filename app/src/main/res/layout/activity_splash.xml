@@ -19,8 +19,11 @@
 
 
     <TextView
+        android:textSize="45sp"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Выбери свою собаку!"
+        android:text="@string/chooseyd"
         />
 </LinearLayout>
