@@ -29,7 +29,7 @@
         <TextView
             android:id="@+id/dogname"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="55dp"
             android:layout_marginStart="12dp"
             android:textSize="17sp"
             android:layout_marginTop="10dp"
@@ -47,7 +47,7 @@
             android:id="@id/dogsecondporoda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:textSize="16sp"
             android:layout_marginStart="12sp" />
 
 
