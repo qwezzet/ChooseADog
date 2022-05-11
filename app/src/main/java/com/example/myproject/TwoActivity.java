@@ -283,11 +283,11 @@ public class TwoActivity extends AppCompatActivity {
         selectedFilter = status;
         ArrayList<State> filteredStates = new ArrayList<>();
         for (State state : stateList) {
-            if (state.getPoroda().toLowerCase().contains(status)) {
+            if (state.getId().toLowerCase().contains(status)) {
                 if (currentSearchText.equals("")) {
                     filteredStates.add(state);
                 } else {
-                    if (state.getPoroda().toLowerCase().contains(currentSearchText.toLowerCase())) {
+                    if (state.getId().toLowerCase().contains(currentSearchText.toLowerCase())) {
                         filteredStates.add(state);
                     }
                 }
@@ -306,32 +306,37 @@ public class TwoActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
     }
 
-    public void storozhbtnfilterTapped(View view) {
-
-    }
-
-    public void housebtnfilterTapped(View view) {
-        filterList("avstrovch");
-    }
-
-    public void dlinnoshbtnfilterTapped(View view) {
-        filterList("Австралийская овчарка");
-    }
-
-    public void korotkshbtnfilterTapped(View view) {
-        filterList("Австралийская овчарка");
-    }
-
     public void bigbtnfilterTapped(View view) {
-        filterList("Австралийская овчарка");
+        filterList("21");
+        filterList("35");
     }
 
     public void midlebtnfilterTapped(View view) {
-        filterList("Австралийская овчарка");
+        filterList("14");
     }
 
     public void smallbtnfilterTapped(View view) {
-        filterList("Австралийская овчарка");
+        filterList("32");
+    }
+
+    public void storozhbtnfilterTapped(View view) {
+        filterList("43");
+    }
+
+    public void housebtnfilterTapped(View view) {
+
+        filterList("3");
+    }
+
+    public void dlinnoshbtnfilterTapped(View view) {
+        filterList("13");
+    }
+
+    public void korotkshbtnfilterTapped(View view) {
+        filterList("23");
+    }
+    public void smeshbtnfilterTapped(View view) {
+        filterList("38");
     }
 
 

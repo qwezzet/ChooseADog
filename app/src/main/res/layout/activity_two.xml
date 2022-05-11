@@ -287,9 +287,9 @@
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
-                    android:onClick="korotkshbtnfilterTapped"
+                    android:onClick="smeshbtnfilterTapped"
                     android:text="@string/mixedtype"
-                    tools:ignore="UsingOnClickInXml" />
+                    tools:ignore="OnClick,UsingOnClickInXml" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
