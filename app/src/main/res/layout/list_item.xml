@@ -10,16 +10,16 @@
 
     <ImageView
         android:id="@+id/picture"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="137dp"
+        android:layout_height="148dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
         tools:ignore="ContentDescription" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="150dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical"
         android:background="@drawable/customlistview"
@@ -43,6 +43,7 @@
             android:layout_marginStart="20sp"
             android:background="@drawable/customnone"
             tools:ignore="SmallSp" />
+
         <android.widget.TextView
             android:id="@id/dogsecondporoda"
             android:layout_width="match_parent"

@@ -33,6 +33,7 @@
             />
     </LinearLayout>
 
+
     <TextView
         android:id="@+id/dogsecondporoda"
         android:layout_width="match_parent"
@@ -42,11 +43,11 @@
         android:paddingTop="10dp"
         android:textSize="17sp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:gravity="center"
         android:layout_gravity="center"
-        android:layout_marginTop="15dp"
         android:layout_marginRight="20dp" />
     <ImageView
         android:id="@+id/picture"
@@ -62,6 +63,8 @@
         android:id="@+id/dogdescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:gravity="center"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="10dp" />

@@ -129,7 +129,7 @@ public class TwoActivity extends AppCompatActivity {
 
                             filteredStates.add(state);
                         } else {
-                            if (state.getPoroda().toLowerCase().contains(selectedFilter) || state.getDescription().toLowerCase().contains(selectedFilter)) {
+                            if (state.getId().toLowerCase().contains(selectedFilter)) {
                                 filteredStates.add(state);
                             }
                         }
@@ -146,116 +146,118 @@ public class TwoActivity extends AppCompatActivity {
 
 
     private void setupData() {
+
         String[] nm = getResources().getStringArray(R.array.dogs_names);
         String[] snm = getResources().getStringArray(R.array.dogs_secondnames);
         String[] dsc = getResources().getStringArray(R.array.dogs_descs);
-        State avstrovch = new State("0", nm[0], snm[0], dsc[0], R.drawable.avstr);
+
+        State avstrovch = new State("2", nm[0], snm[0], dsc[0], R.drawable.avstr);
         stateList.add(avstrovch);
-        State akitainu = new State("1", nm[1], snm[1], dsc[1], R.drawable.akita);
+        State akitainu = new State("2", nm[1], snm[1], dsc[1], R.drawable.akita);
         stateList.add(akitainu);
         State americstafford = new State("2", nm[2], snm[2], dsc[2], R.drawable.am_staff);
         stateList.add(americstafford);
-        State englbulldog = new State("3", nm[3], snm[3], dsc[3], R.drawable.bull);
+        State englbulldog = new State("2", nm[3], snm[3], dsc[3], R.drawable.bull);
         stateList.add(englbulldog);
-        State bassethaund = new State("4", nm[4], snm[4], dsc[4], R.drawable.bassh);
+        State bassethaund = new State("1", nm[4], snm[4], dsc[4], R.drawable.bassh);
         stateList.add(bassethaund);
-        State burnzennen = new State("5", nm[5], snm[5], dsc[5], R.drawable.zennen);
+        State burnzennen = new State("3", nm[5], snm[5], dsc[5], R.drawable.zennen);
         stateList.add(burnzennen);
-        State bigl = new State("6", nm[6], snm[6], dsc[6], R.drawable.bigl);
+        State bigl = new State("1", nm[6], snm[6], dsc[6], R.drawable.bigl);
         stateList.add(bigl);
-        State velshkorgi = new State("7", nm[7], snm[7], dsc[7], R.drawable.korgi);
+        State velshkorgi = new State("1", nm[7], snm[7], dsc[7], R.drawable.korgi);
         stateList.add(velshkorgi);
-        State vesteuovcharka = new State("8", nm[8], snm[8], dsc[8], R.drawable.vesteuov);
+        State vesteuovcharka = new State("3", nm[8], snm[8], dsc[8], R.drawable.vesteuov);
         stateList.add(vesteuovcharka);
-        State gavanbishon = new State("9", nm[9], snm[9], dsc[9], R.drawable.gavbish);
+        State gavanbishon = new State("1", nm[9], snm[9], dsc[9], R.drawable.gavbish);
         stateList.add(gavanbishon);
-        State dolmatin = new State("10", nm[10], snm[10], dsc[10], R.drawable.dolm);
+        State dolmatin = new State("3", nm[10], snm[10], dsc[10], R.drawable.dolm);
         stateList.add(dolmatin);
-        State doberman = new State("11", nm[11], snm[11], dsc[11], R.drawable.dober);
+        State doberman = new State("3", nm[11], snm[11], dsc[11], R.drawable.dober);
         stateList.add(doberman);
-        State zapadsiblaika = new State("12", nm[12], snm[12], dsc[12], R.drawable.zaplaika);
+        State zapadsiblaika = new State("2", nm[12], snm[12], dsc[12], R.drawable.zaplaika);
         stateList.add(zapadsiblaika);
-        State goldretriver = new State("13", nm[13], snm[13], dsc[13], R.drawable.retriv);
+        State goldretriver = new State("2", nm[13], snm[13], dsc[13], R.drawable.retriv);
         stateList.add(goldretriver);
-        State irelandvolkodav = new State("14", nm[14], snm[14], dsc[14], R.drawable.volkod);
+        State irelandvolkodav = new State("2", nm[14], snm[14], dsc[14], R.drawable.volkod);
         stateList.add(irelandvolkodav);
-        State spanishmastif = new State("15", nm[15], snm[15], dsc[15], R.drawable.spmast);
+        State spanishmastif = new State("3", nm[15], snm[15], dsc[15], R.drawable.spmast);
         stateList.add(spanishmastif);
-        State iorkterrer = new State("16", nm[16], snm[16], dsc[16], R.drawable.ioterr);
+        State iorkterrer = new State("1", nm[16], snm[16], dsc[16], R.drawable.ioterr);
         stateList.add(iorkterrer);
-        State kavkazovcharka = new State("17", nm[17], snm[17], dsc[17], R.drawable.kavov);
+        State kavkazovcharka = new State("3", nm[17], snm[17], dsc[17], R.drawable.kavov);
         stateList.add(kavkazovcharka);
-        State kanecorso = new State("18", nm[18], snm[18], dsc[18], R.drawable.kane);
+        State kanecorso = new State("3", nm[18], snm[18], dsc[18], R.drawable.kane);
         stateList.add(kanecorso);
-        State chinahohl = new State("19", nm[19], snm[19], dsc[19], R.drawable.chhohl);
+        State chinahohl = new State("1", nm[19], snm[19], dsc[19], R.drawable.chhohl);
         stateList.add(chinahohl);
-        State komandor = new State("20", nm[20], snm[20], dsc[20], R.drawable.koman);
+        State komandor = new State("3", nm[20], snm[20], dsc[20], R.drawable.koman);
         stateList.add(komandor);
-        State labladorretr = new State("21", nm[21], snm[21], dsc[21], R.drawable.labret);
+        State labladorretr = new State("2", nm[21], snm[21], dsc[21], R.drawable.labret);
         stateList.add(labladorretr);
-        State leonberger = new State("22", nm[22], snm[22], dsc[22], R.drawable.leon);
+        State leonberger = new State("3", nm[22], snm[22], dsc[22], R.drawable.leon);
         stateList.add(leonberger);
-        State maltabalon = new State("23", nm[23], snm[23], dsc[23], R.drawable.balon);
+        State maltabalon = new State("1", nm[23], snm[23], dsc[23], R.drawable.balon);
         stateList.add(maltabalon);
-        State mops = new State("24", nm[24], snm[24], dsc[24], R.drawable.mops);
+        State mops = new State("1", nm[24], snm[24], dsc[24], R.drawable.mops);
         stateList.add(mops);
-        State doichovcharka = new State("25", nm[25], snm[25], dsc[25], R.drawable.dovch);
+        State doichovcharka = new State("3", nm[25], snm[25], dsc[25], R.drawable.dovch);
         stateList.add(doichovcharka);
-        State doichbokser = new State("26", nm[26], snm[26], dsc[26], R.drawable.bokser);
+        State doichbokser = new State("3", nm[26], snm[26], dsc[26], R.drawable.bokser);
         stateList.add(doichbokser);
-        State doichdog = new State("27", nm[27], snm[27], dsc[27], R.drawable.ddog);
+        State doichdog = new State("3", nm[27], snm[27], dsc[27], R.drawable.ddog);
         stateList.add(doichdog);
-        State newfoundland = new State("28", nm[28], snm[28], dsc[28], R.drawable.newf);
+        State newfoundland = new State("3", nm[28], snm[28], dsc[28], R.drawable.newf);
         stateList.add(newfoundland);
-        State pekines = new State("29", nm[29], snm[29], dsc[29], R.drawable.pekines);
+        State pekines = new State("1", nm[29], snm[29], dsc[29], R.drawable.pekines);
         stateList.add(pekines);
-        State pomeranskshpic = new State("30", nm[30], snm[30], dsc[30], R.drawable.pspic);
+        State pomeranskshpic = new State("1", nm[30], snm[30], dsc[30], R.drawable.pspic);
         stateList.add(pomeranskshpic);
-        State pudel = new State("31", nm[31], snm[31], dsc[31], R.drawable.pudel);
+        State pudel = new State("1", nm[31], snm[31], dsc[31], R.drawable.pudel);
         stateList.add(pudel);
-        State rizenshaunzer = new State("32", nm[32], snm[32], dsc[32], R.drawable.rizen);
+        State rizenshaunzer = new State("2", nm[32], snm[32], dsc[32], R.drawable.rizen);
         stateList.add(rizenshaunzer);
-        State rotveiler = new State("33", nm[33], snm[33], dsc[33], R.drawable.rotv);
+        State rotveiler = new State("3", nm[33], snm[33], dsc[33], R.drawable.rotv);
         stateList.add(rotveiler);
-        State russianborzya = new State("34", nm[34], snm[34], dsc[34], R.drawable.rusborz);
+        State russianborzya = new State("3", nm[34], snm[34], dsc[34], R.drawable.rusborz);
         stateList.add(russianborzya);
-        State russiantoi = new State("35", nm[35], snm[35], dsc[35], R.drawable.rustoi);
+        State russiantoi = new State("1", nm[35], snm[35], dsc[35], R.drawable.rustoi);
         stateList.add(russiantoi);
-        State samoed = new State("36", nm[36], snm[36], dsc[36], R.drawable.samoed);
+        State samoed = new State("2", nm[36], snm[36], dsc[36], R.drawable.samoed);
         stateList.add(samoed);
-        State senbernar = new State("37", nm[37], snm[37], dsc[37], R.drawable.senbr);
+        State senbernar = new State("2", nm[37], snm[37], dsc[37], R.drawable.senbr);
         stateList.add(senbernar);
-        State taksa = new State("38", nm[38], snm[38], dsc[38], R.drawable.taksa);
+        State taksa = new State("1", nm[38], snm[38], dsc[38], R.drawable.taksa);
         stateList.add(taksa);
-        State tibetskimastif = new State("39", nm[39], snm[39], dsc[39], R.drawable.tibmast);
+        State tibetskimastif = new State("3", nm[39], snm[39], dsc[39], R.drawable.tibmast);
         stateList.add(tibetskimastif);
-        State uippet = new State("40", nm[40], snm[40], dsc[40], R.drawable.uippet);
+        State uippet = new State("1", nm[40], snm[40], dsc[40], R.drawable.uippet);
         stateList.add(uippet);
-        State pharaondog = new State("41", nm[41], snm[41], dsc[41], R.drawable.phar);
+        State pharaondog = new State("2", nm[41], snm[41], dsc[41], R.drawable.phar);
         stateList.add(pharaondog);
-        State francebulldog = new State("42", nm[42], snm[42], dsc[42], R.drawable.frbull);
+        State francebulldog = new State("1", nm[42], snm[42], dsc[42], R.drawable.frbull);
         stateList.add(francebulldog);
-        State hovavart = new State("43", nm[43], snm[43], dsc[43], R.drawable.hova);
+        State hovavart = new State("1", nm[43], snm[43], dsc[43], R.drawable.hova);
         stateList.add(hovavart);
-        State cvergshnaucer = new State("44", nm[44], snm[44], dsc[44], R.drawable.cvergs);
+        State cvergshnaucer = new State("1", nm[44], snm[44], dsc[44], R.drawable.cvergs);
         stateList.add(cvergshnaucer);
-        State chauchau = new State("45", nm[45], snm[45], dsc[45], R.drawable.chch);
+        State chauchau = new State("2", nm[45], snm[45], dsc[45], R.drawable.chch);
         stateList.add(chauchau);
-        State blackterrer = new State("46", nm[46], snm[46], dsc[46], R.drawable.blterr);
+        State blackterrer = new State("2", nm[46], snm[46], dsc[46], R.drawable.blterr);
         stateList.add(blackterrer);
-        State chihuahua = new State("47", nm[47], snm[47], dsc[47], R.drawable.chihua);
+        State chihuahua = new State("1", nm[47], snm[47], dsc[47], R.drawable.chihua);
         stateList.add(chihuahua);
-        State sharpay = new State("48", nm[48], snm[48], dsc[48], R.drawable.sharp);
+        State sharpay = new State("2", nm[48], snm[48], dsc[48], R.drawable.sharp);
         stateList.add(sharpay);
-        State shitsu = new State("49", nm[49], snm[49], dsc[49], R.drawable.shitsu);
+        State shitsu = new State("1", nm[49], snm[49], dsc[49], R.drawable.shitsu);
         stateList.add(shitsu);
-        State elderterrer = new State("50", nm[50], snm[50], dsc[50], R.drawable.elterr);
+        State elderterrer = new State("1", nm[50], snm[50], dsc[50], R.drawable.elterr);
         stateList.add(elderterrer);
-        State dogwithblmouth = new State("51", nm[51], snm[51], dsc[51], R.drawable.blmouth);
+        State dogwithblmouth = new State("3", nm[51], snm[51], dsc[51], R.drawable.blmouth);
         stateList.add(dogwithblmouth);
-        State japanesexin = new State("52", nm[52], snm[52], dsc[52], R.drawable.jxin);
+        State japanesexin = new State("1", nm[52], snm[52], dsc[52], R.drawable.jxin);
         stateList.add(japanesexin);
-        State japaneseshpic = new State("53", nm[53], snm[53], dsc[53], R.drawable.jspic);
+        State japaneseshpic = new State("1", nm[53], snm[53], dsc[53], R.drawable.jspic);
         stateList.add(japaneseshpic);
 
 
@@ -306,38 +308,32 @@ public class TwoActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
     }
 
-    public void bigbtnfilterTapped(View view) {
-        filterList("21");
-        filterList("35");
-    }
+    public void bigbtnfilterTapped(View view) { filterList("3"); }
 
     public void midlebtnfilterTapped(View view) {
-        filterList("14");
+        filterList("2");
     }
 
     public void smallbtnfilterTapped(View view) {
-        filterList("32");
+        filterList("1");
     }
 
     public void storozhbtnfilterTapped(View view) {
-        filterList("43");
+        filterList("4");
     }
 
-    public void housebtnfilterTapped(View view) {
-
-        filterList("3");
-    }
+    public void housebtnfilterTapped(View view) { filterList("5"); }
 
     public void dlinnoshbtnfilterTapped(View view) {
-        filterList("13");
+        filterList("6");
     }
 
     public void korotkshbtnfilterTapped(View view) {
-        filterList("23");
+        filterList("7");
     }
 
     public void smeshbtnfilterTapped(View view) {
-        filterList("38");
+        filterList("8");
     }
 
 
