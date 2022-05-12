@@ -140,7 +140,7 @@
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
-                    android:onClick="bigbtnfilterTapped"
+                    android:onClick="bigbtn"
                     android:text="@string/bigdog"
                     android:textSize="12sp"
                     tools:ignore="UsingOnClickInXml" />
@@ -153,7 +153,7 @@
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
-                    android:onClick="midlebtnfilterTapped"
+                    android:onClick="midlebtn"
                     android:text="@string/midledog"
                     android:textSize="12sp"
                     tools:ignore="UsingOnClickInXml" />
@@ -166,7 +166,7 @@
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
-                    android:onClick="smallbtnfilterTapped"
+                    android:onClick="smallbtn"
                     android:text="@string/smalldog"
                     android:textSize="12sp"
                     tools:ignore="UsingOnClickInXml" />
@@ -209,7 +209,7 @@
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
-                    android:onClick="storozhbtnfilterTapped"
+                    android:onClick="storozhbtn"
                     android:text="@string/dogforstreet"
 
                     tools:ignore="UsingOnClickInXml" />
@@ -222,8 +222,20 @@
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
-                    android:onClick="housebtnfilterTapped"
+                    android:onClick="housebtn"
                     android:text="@string/housedog"
+                    tools:ignore="UsingOnClickInXml" />
+                <android.widget.Button
+                    android:id="@+id/decoratbtnfilter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:background="@drawable/customtextview2"
+                    android:onClick="decorbtn"
+                    android:text="@string/decoration"
                     tools:ignore="UsingOnClickInXml" />
 
             </LinearLayout>
@@ -263,7 +275,7 @@
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
-                    android:onClick="dlinnoshbtnfilterTapped"
+                    android:onClick="dlinnoshbtn"
                     android:text="@string/longtype"
                     tools:ignore="UsingOnClickInXml" />
 
@@ -275,7 +287,7 @@
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
-                    android:onClick="korotkshbtnfilterTapped"
+                    android:onClick="korotkshbtn"
                     android:text="@string/shorttype"
                     tools:ignore="UsingOnClickInXml" />
 
@@ -287,7 +299,7 @@
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
                     android:background="@drawable/customtextview2"
-                    android:onClick="smeshbtnfilterTapped"
+                    android:onClick="smeshbtn"
                     android:text="@string/mixedtype"
                     tools:ignore="OnClick,UsingOnClickInXml" />
             </LinearLayout>
