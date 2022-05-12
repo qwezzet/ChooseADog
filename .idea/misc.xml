@@ -4,9 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1275" />
+        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customactivity.xml" value="0.2475" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/custombtnback.xml" value="0.273" />
+        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/custombtngo.xml" value="0.2475" />
+        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/custombtnsearch.xml" value="0.2475" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customnone.xml" value="0.1275" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customstarinstate.xml" value="0.273" />
+        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/ic_information.xml" value="0.32" />
+        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/icon_back.xml" value="0.32" />
+        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/icon_back2.xml" value="0.32" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/icon_star.xml" value="0.273" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/info_icon.xml" value="0.1275" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/activity_customalert.xml" value="0.36666666666666664" />
