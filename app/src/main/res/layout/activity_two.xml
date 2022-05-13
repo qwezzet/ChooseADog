@@ -8,18 +8,21 @@
     tools:context=".TwoActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="160dp">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <ImageButton
             android:id="@+id/btntotbl"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/customphotomain"
-            tools:ignore="ContentDescription"
+            android:layout_gravity="center"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
-            android:src="@drawable/tablephoto1" />
+            android:src="@drawable/tablephoto1"
+            tools:ignore="ContentDescription" />
     </LinearLayout>
 
     <androidx.appcompat.widget.Toolbar

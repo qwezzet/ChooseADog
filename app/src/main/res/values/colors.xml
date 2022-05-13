@@ -15,13 +15,6 @@
     <color name="purpleblack">#741E87</color>
     <color name="purplewhite">#CE74E3</color>
     <color name="yellowwhite">#E1C47B</color>
-    <color name="yellowblack">#93831C</color>
-    <color name="lightgray0">#DCDCDC</color>
-    <color name="lightbrown0">#FFEFD5</color>
-    <color name="steelblue1">#63B8FF</color>
-    <color name="steelblue2">#5CACEE</color>
-    <color name="steelblue3">#4F94CD</color>
-    <color name="deepblue1">#00BFFF</color>
     <color name="deepblue2">#00B2EE</color>
     <color name="deepblue3">#009ACD</color>
     <color name="browngray">#8B7D6B</color>
@@ -29,6 +22,11 @@
     <color name="aquamarine">#7FFFD4</color>
     <color name="lightgray">#D3D3D3</color>
     <color name="invisiblecolor">#00F4FF81</color>
+    <color name="forestgreen">#228B22</color>
+    <color name="lightseagreen">#20B2AA</color>
+    <color name="dodgerblue">#1E90FF</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="midnightblue">#191970</color>
     <color name="grayforversion">#595959</color>
     <color name="cadetblue">#5F9EA0</color>
     <color name="darkolivegreen">#556B2F</color>
@@ -38,13 +36,13 @@
     <color name="mediumseagreen">#3CB371</color>
     <color name="limegreen">#32CD32</color>
     <color name="darkslategray">#2F4F4F</color>
+    <color name="yellowblack">#93831C</color>
+    <color name="lightgray0">#DCDCDC</color>
+    <color name="lightbrown0">#FFEFD5</color>
+    <color name="steelblue1">#63B8FF</color>
+    <color name="deepblue1">#00BFFF</color>
     <color name="seagreen">#2E8B57</color>
-    <color name="forestgreen">#228B22</color>
-    <color name="lightseagreen">#20B2AA</color>
-    <color name="dodgerblue">#1E90FF</color>
-    <color name="midnightblue">#191970</color>
     <color name="aqua">#00FFFF</color>
-    <color name="cyan">#00FFFF</color>
     <color name="lime">#00FF00</color>
     <color name="mediumgreen">#00FA9A</color>
 </resources>
