@@ -3,16 +3,16 @@ package com.example.myproject;
 public class State {
 
     private String id;
-
+    private String filtid;
     private String poroda;
     private String secondporoda;
     private String description;
     private int imagedog;
 
-    public State(String id, String poroda, String secondporoda, String description, int imagedog) {
+    public State(String id, String fid, String poroda, String secondporoda, String description, int imagedog) {
 
         this.id = id;
-
+        this.filtid = fid;
         this.poroda = poroda;
         this.secondporoda = secondporoda;
         this.description = description;
@@ -59,4 +59,8 @@ public class State {
     public void setPoroda(String poroda) {
         this.poroda = poroda;
     }
+
+    public String getFiltid() { return filtid; }
+
+    public void setFiltid(String filtid) { this.filtid = filtid; }
 }
