@@ -136,7 +136,7 @@
 
 
                 <android.widget.Button
-                    android:id="@+id/bighbtnfilter"
+                    android:id="@+id/filtbig"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
@@ -149,7 +149,7 @@
                     tools:ignore="UsingOnClickInXml" />
 
                 <android.widget.Button
-                    android:id="@+id/midlebtnfilter"
+                    android:id="@+id/filtmidle"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
@@ -162,7 +162,7 @@
                     tools:ignore="UsingOnClickInXml" />
 
                 <android.widget.Button
-                    android:id="@+id/smallbtnfilter"
+                    android:id="@+id/filtsmall"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
@@ -205,7 +205,7 @@
                 android:orientation="horizontal">
 
                 <android.widget.Button
-                    android:id="@+id/storozhbtnfilter"
+                    android:id="@+id/filtsluzh"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
@@ -218,7 +218,7 @@
                     tools:ignore="UsingOnClickInXml" />
 
                 <android.widget.Button
-                    android:id="@+id/housebtnfilter"
+                    android:id="@+id/filthouse"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
@@ -229,7 +229,7 @@
                     android:text="@string/housedog"
                     tools:ignore="UsingOnClickInXml" />
                 <android.widget.Button
-                    android:id="@+id/decoratbtnfilter"
+                    android:id="@+id/filtoxot"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
@@ -271,7 +271,7 @@
                 android:orientation="horizontal">
 
                 <android.widget.Button
-                    android:id="@+id/dlinnoshbtnfilter"
+                    android:id="@+id/filtlong"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
@@ -283,7 +283,7 @@
                     tools:ignore="UsingOnClickInXml" />
 
                 <android.widget.Button
-                    android:id="@+id/smallshbtnfilter"
+                    android:id="@+id/filtshort"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"
@@ -295,7 +295,7 @@
                     tools:ignore="UsingOnClickInXml" />
 
                 <android.widget.Button
-                    android:id="@+id/smeshbtnfilter"
+                    android:id="@+id/filtsmesh"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="2dp"

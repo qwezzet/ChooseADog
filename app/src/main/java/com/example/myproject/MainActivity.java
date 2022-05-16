@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null;
         actionBar.hide();
+        setContentView(R.layout.activity_main);
         btnclose = findViewById(R.id.btnexit);
         btnhello = findViewById(R.id.btnfrommaintotwo);
         btnhello.setOnClickListener(v -> {
