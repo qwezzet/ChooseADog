@@ -34,7 +34,7 @@
             android:id="@+id/sortandsearchButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/customnone"
+
             android:onClick="showSortTapped"
             android:text="@string/findandsearch"
             android:textAllCaps="false"
@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/customtextview2"
                     android:onClick="allbtnfilterTapped"
-                    android:text="@string/all"
+                    android:text="@string/all_delete"
                     android:textSize="18sp"
                     tools:ignore="UsingOnClickInXml" />
 

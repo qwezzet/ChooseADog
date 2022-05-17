@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,9 +34,10 @@ public class TwoActivity extends AppCompatActivity {
     private LinearLayout filterLinearView6;
     private LinearLayout filterLinearView7;
     private Button filterButton;
-    private ArrayList <String> selectedFilters = new ArrayList<String>();
+    private ArrayList<String> selectedFilters = new ArrayList<String>();
     private String currentSearchText = "";
-    private int white, dark, red;
+    private int textcolpressed, textcolunpressed;
+    private Drawable btn_sel, btn_unsel;
     private SearchView searchView;
     boolean filterHidden = true;
     private Button bigBtn, midleBtn, smallBtn, sluzhBtn, houseBtn, oxotBtn, longBtn, shortBtn, smeshBtn, allBtn;
@@ -59,7 +61,7 @@ public class TwoActivity extends AppCompatActivity {
         initSearchWidgets();
         setupOnClickListener();
         hideFilter();
-        initColors();
+        initBackgrounds();
         lSelected(allBtn);
         selectedFilters.add("all");
 
@@ -73,11 +75,13 @@ public class TwoActivity extends AppCompatActivity {
 
     }
 
-    private void initColors() {
-        white = ContextCompat.getColor(getApplicationContext(), R.color.aquamarine);
-        red = ContextCompat.getColor(getApplicationContext(), R.color.lightgray);
-        dark = ContextCompat.getColor(getApplicationContext(), R.color.browngray);
+    private void initBackgrounds() {
+        textcolpressed = ContextCompat.getColor(getApplicationContext(), R.color.lightgray0);
+        textcolunpressed = ContextCompat.getColor(getApplicationContext(), R.color.black);
+        btn_sel = ContextCompat.getDrawable(getApplicationContext(), R.drawable.customtextview3);
+        btn_unsel = ContextCompat.getDrawable(getApplicationContext(), R.drawable.customtextview2);
     }
+
 
     private void unSfilterbtns() {
         lunSelected(bigBtn);
@@ -93,13 +97,13 @@ public class TwoActivity extends AppCompatActivity {
     }
 
     private void lSelected(Button zzzButton) {
-        zzzButton.setTextColor(white);
-        zzzButton.setBackgroundColor(red);
+        zzzButton.setTextColor(textcolpressed);
+        zzzButton.setBackground(btn_sel);
     }
 
     private void lunSelected(Button zzzButton) {
-        zzzButton.setTextColor(white);
-        zzzButton.setBackgroundColor(dark);
+        zzzButton.setTextColor(textcolunpressed);
+        zzzButton.setBackground(btn_unsel);
     }
 
     private void hideFilter() {
@@ -173,9 +177,9 @@ public class TwoActivity extends AppCompatActivity {
 
                             filteredStates.add(state);
                         } else {
-                            for(String filter : selectedFilters){
-                            if (state.getId().toLowerCase().contains(filter)) {
-                                filteredStates.add(state);
+                            for (String filter : selectedFilters) {
+                                if (state.getId().toLowerCase().contains(filter)) {
+                                    filteredStates.add(state);
                                 }
                             }
                         }
@@ -328,17 +332,17 @@ public class TwoActivity extends AppCompatActivity {
 
 
     private void filterList(String status) {
-        if(status != null && !selectedFilters.contains(status) )
-        selectedFilters.add(status);
+        if (status != null && !selectedFilters.contains(status))
+            selectedFilters.add(status);
         ArrayList<State> filteredStates = new ArrayList<>();
         for (State state : stateList) {
-            for (String filter : selectedFilters){
-            if (state.getFiltid().toLowerCase().contains(filter)) {
-                if (currentSearchText.equals("")) {
-                    filteredStates.add(state);
-                } else {
-                    if (state.getFiltid().toLowerCase().contains(currentSearchText.toLowerCase())) {
+            for (String filter : selectedFilters) {
+                if (state.getFiltid().toLowerCase().contains(filter)) {
+                    if (currentSearchText.equals("")) {
                         filteredStates.add(state);
+                    } else {
+                        if (state.getFiltid().toLowerCase().contains(currentSearchText.toLowerCase())) {
+                            filteredStates.add(state);
                         }
                     }
                 }
@@ -424,6 +428,7 @@ public class TwoActivity extends AppCompatActivity {
         lunSelected(allBtn);
         selectedFilters.remove("all");
     }
+
     public void showSortTapped(View view) {
         if (filterHidden) {
             filterHidden = false;
