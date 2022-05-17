@@ -4,7 +4,9 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -14,7 +16,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnhello, btnclose;
+    Button btnhello, btnclose, btnAlert, btnFrAlert;
 
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
@@ -27,6 +29,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         btnclose = findViewById(R.id.btnexit);
         btnhello = findViewById(R.id.btnfrommaintotwo);
+        btnAlert = findViewById(R.id.btnaboutall);
+        btnFrAlert = findViewById(R.id.abBtn);
+        btnAlert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialogGet();
+            }
+        });
+
+
         btnhello.setOnClickListener(v -> {
             Intent i = new Intent(MainActivity.this, TwoActivity.class);
             startActivity(i);
@@ -36,12 +48,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void showAlertDialogMain(View v) {
-        String[] arrayAlert = getResources().getStringArray(R.array.mainarray);
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setTitle(arrayAlert[0]);
-        alert.setMessage(arrayAlert[1]);
-        alert.setPositiveButton(arrayAlert[2], (dialogInterface, i) -> Toast.makeText(MainActivity.this, arrayAlert[3], Toast.LENGTH_SHORT).show());
-        alert.create().show();
+
+    public void dialogGet() {
+        String[] array = getResources().getStringArray(R.array.mainarray);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        View view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.dialog_layout, findViewById(R.id.dialLay));
+        builder.setView(view);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.setCancelable(false);
+        btnFrAlert = view.findViewById(R.id.abBtn);
+        btnFrAlert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alertDialog.cancel();
+                Toast.makeText(MainActivity.this, array[0], Toast.LENGTH_SHORT).show();
+            }
+        });
+        alertDialog.show();
     }
+
+
 }

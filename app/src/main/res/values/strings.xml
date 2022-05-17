@@ -29,9 +29,6 @@
         <item>Закрыть</item>
     </string-array>
     <string-array name="mainarray">
-        <item>Информация о приложении</item>
-        <item>-Тут будет информация о приложении-</item>
-        <item>Скрыть</item>
         <item>С уважением от разработчика!</item>
     </string-array>
     <string-array name="dogs_names">
@@ -267,4 +264,6 @@
     <string name="decoration">Декоративные</string>
     <string name="oxot">Охотничьи</string>
     <string name="all_delete">Все / Сброс</string>
+    <string name="infab">-Тут будет информация о приложении-</string>
+    <string name="unshow">Скрыть</string>
 </resources>
