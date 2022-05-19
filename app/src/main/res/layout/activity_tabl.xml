@@ -81,12 +81,15 @@
                     android:background="@drawable/custombtnsearch2"
                     android:onClick="showAlertDialogInform1"
                     android:text="@string/information"
+                    android:layout_marginTop="10dp"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     tools:ignore="RtlHardcoded,UsingOnClickInXml" />
 
                 <TextView
+                    android:layout_marginBottom="10dp"
+
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
@@ -113,13 +116,16 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="140dp"
                         android:layout_marginRight="140dp"
+
                         android:background="@drawable/custombtnsearch"
                         android:gravity="center"
                         android:text="@string/xs22"
@@ -328,7 +334,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -545,7 +553,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -800,7 +810,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -1003,7 +1015,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -1217,7 +1231,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -1471,7 +1487,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -1686,7 +1704,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -1900,7 +1920,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -2142,7 +2164,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -2345,7 +2369,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -2560,7 +2586,9 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="30dp">
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:layout_width="match_parent"

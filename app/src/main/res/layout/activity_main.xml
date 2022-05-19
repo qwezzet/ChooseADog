@@ -12,6 +12,7 @@
         android:layout_gravity="top"
         android:layout_marginTop="15dp"
         android:gravity="center"
+        android:paddingBottom="5dp"
         android:text="@string/dog"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
@@ -20,7 +21,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="330dp"
-        android:layout_marginTop="-10dp"
+
         android:src="@drawable/mainphoto1"
         tools:ignore="ContentDescription" />
 
@@ -28,8 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:layout_marginTop="-15dp"
         android:gravity="center"
+        android:paddingTop="5dp"
         android:text="@string/forall"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
@@ -44,13 +45,15 @@
 
         <android.widget.Button
             android:id="@+id/btnfrommaintotwo"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
+            android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="45dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/custombtnsearch"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
             android:text="@string/start"
             android:textAllCaps="false"
             android:textColor="#3C3C3C"
@@ -58,15 +61,17 @@
 
         <android.widget.Button
             android:id="@+id/btnaboutall"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
+            android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/custombtnsearch"
-            android:text="@string/aboutthis"
             android:onClick="showAlertDialogMain"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:text="@string/aboutthis"
             android:textAllCaps="false"
             android:textColor="#3C3C3C"
             android:textSize="25sp"
@@ -74,13 +79,15 @@
 
         <android.widget.Button
             android:id="@+id/btnexit"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
+            android:layout_gravity="center"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
             android:background="@drawable/custombtnsearch"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
             android:text="@string/exit"
             android:textAllCaps="false"
             android:textColor="#3C3C3C"
@@ -91,15 +98,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:gravity="center"
-        android:textSize="14sp"
-        android:layout_marginBottom="5dp"
-        android:textColor="@color/grayforversion"
-        android:text="@string/version"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/version"
+            android:textColor="@color/grayforversion"
+            android:textSize="14sp" />
 
     </LinearLayout>
 

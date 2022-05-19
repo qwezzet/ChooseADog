@@ -23,13 +23,14 @@
         <TextView
             android:id="@+id/dogname"
             android:layout_width="match_parent"
-            android:layout_height="76dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="10sp"
             android:layout_marginTop="15sp"
             android:layout_marginEnd="10sp"
             android:background="@drawable/custombtnsearch"
             android:gravity="center"
-            android:textSize="18sp"
+            android:padding="20dp"
+            android:textSize="21sp"
 
             />
     </LinearLayout>
@@ -57,7 +58,7 @@
                 android:paddingTop="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
-                android:textSize="17sp" />
+                android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/picture"
@@ -74,15 +75,14 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="10dp"
-                android:gravity="center"
-                android:textSize="20sp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/customvideofon"
-                android:paddingRight="15dp"
+                android:gravity="center"
                 android:paddingLeft="15dp"
                 android:paddingTop="15dp"
+                android:paddingRight="15dp"
                 android:paddingBottom="15dp"
-                />
+                android:textSize="25sp" />
         </LinearLayout>
     </ScrollView>
 

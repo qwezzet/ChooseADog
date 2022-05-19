@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/dialLay"
-    android:background="@drawable/akita"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
@@ -19,13 +18,14 @@
         android:background="@drawable/dialog_background"
         android:orientation="vertical"
         android:paddingTop="20dp"
-        android:paddingBottom="20dp">
+        android:paddingBottom="20dp"
+        tools:ignore="UselessParent">
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:src="@drawable/icon_star"
+            android:src="@drawable/icon_tree_list"
             tools:ignore="ContentDescription" />
 
         <TextView
