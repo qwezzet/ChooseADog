@@ -8,24 +8,12 @@
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/custombtnback.xml" value="0.273" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/custombtngo.xml" value="0.2475" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/custombtnsearch.xml" value="0.2475" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/custombtnsearch2.xml" value="0.228" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customlistview.xml" value="0.228" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customnone.xml" value="0.1275" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customphotomain.xml" value="0.228" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customradiofilter.xml" value="0.228" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customsearchview.xml" value="0.228" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customstarinstate.xml" value="0.273" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customtextview.xml" value="0.242" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customtextview2.xml" value="0.3205" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customtextview3.xml" value="0.3205" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/customvideofon.xml" value="0.242" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/dialog_background.xml" value="0.3205" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/ic_baseline_eco_24.xml" value="0.228" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/ic_information.xml" value="0.32" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/icon_back.xml" value="0.32" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/icon_back2.xml" value="0.32" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/icon_star.xml" value="0.273" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/icon_tree_list.xml" value="0.228" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/drawable/info_icon.xml" value="0.1275" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/activity_customalert.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/activity_description.xml" value="0.36666666666666664" />
@@ -33,8 +21,7 @@
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/activity_main.xml" value="0.2296875" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/activity_tabl.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/activity_two.xml" value="0.33" />
-        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/dialog_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/activity_two.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/list_item.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/state_stateaboutdog.xml" value="0.33" />
         <entry key="..\:/Users/Mr. Nefelim/AndroidStudioProjects/ChooseADog/app/src/main/res/layout/state_view.xml" value="0.36666666666666664" />
@@ -75,10 +62,15 @@
         <entry key="..\:/Users/Myitschool/AndroidStudioProjects/Choose/app/src/main/res/drawable/customsearchview.xml" value="0.1285" />
         <entry key="..\:/Users/Myitschool/AndroidStudioProjects/Choose/app/src/main/res/layout/activity_main.xml" value="0.30277777777777776" />
         <entry key="..\:/Users/Myitschool/AndroidStudioProjects/Choose/app/src/main/res/layout/activity_two.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Myitschool/AndroidStudioProjects/ChooseADogMy/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Myitschool/AndroidStudioProjects/ChooseADogMy/app/src/main/res/layout/activity_two.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Myitschool/AndroidStudioProjects/ChooseADogMy/app/src/main/res/layout/dialog_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Myitschool/AndroidStudioProjects/ChooseADogMy/app/src/main/res/layout/list_item.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Myitschool/AndroidStudioProjects/ChooseADogMy/app/src/main/res/layout/state_stateaboutdog.xml" value="0.25" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
