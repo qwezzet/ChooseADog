@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         View view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.dialog_layout, findViewById(R.id.dialLay));
         builder.setView(view);
         AlertDialog alertDialog = builder.create();
+        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         alertDialog.setCancelable(false);
         btnFrAlert = view.findViewById(R.id.abBtn);
         btnFrAlert.setOnClickListener(new View.OnClickListener() {

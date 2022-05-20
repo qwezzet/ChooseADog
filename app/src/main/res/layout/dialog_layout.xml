@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:text="@string/infab"
-
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <android.widget.Button
