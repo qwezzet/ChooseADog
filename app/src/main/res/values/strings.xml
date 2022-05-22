@@ -216,8 +216,10 @@
     <string name="dogs10">Английский бульдог, Шарпей, Босерон, Бультерьер, Тоса-Ину, Питбультерьер</string>
     <string name="dogs11">Стаффоршидский терьер, Лабрадор, Ретривер, Бультерьер, Ховаварт</string>
     <string name="dogs12">Ротвейлер, Боксер, Кане Корсо, Маламут, Сеттер, Немецкая овчарка</string>
+    <string name="editor3">Используются навыки приобретенные при обучении в IT School Samsung</string>
+    <string name="editor2">Учитель (Руководство) – Павел Фридрихович </string>
+    <string name="editor1">Разработчик – Долматов Максим </string>
     <string name="description_dog">Подробнее о замерах собаки</string>
-    <string name="infab">-Тут будет информация о приложении-</string>
     <string name="backtotabletext">Вернуться к таблице</string>
     <string name="findandsearch">Поиск и фильтры</string>
     <string name="chooseyd">Выбери свою собаку!</string>

@@ -39,8 +39,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
             btnhello.setTextColor(Color.GRAY);
         });
-        btnclose.setOnClickListener(view -> finish());
-
+        btnclose.setOnClickListener(view -> {
+            Intent ActivityClose = new Intent(getApplicationContext(), SplashActivity.class);
+            ActivityClose.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            ActivityClose.putExtra("EXIT",true);
+            startActivity(ActivityClose);
+            finish();
+            System.exit(0);
+        });
     }
 
 

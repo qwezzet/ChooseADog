@@ -35,5 +35,11 @@ public class SplashActivity extends AppCompatActivity {
             }
         };
         thread.start();
+
+
+        if (getIntent().getBooleanExtra("EXIT",false)){
+            finish();
+            System.exit(0);
+        }
     }
 }
