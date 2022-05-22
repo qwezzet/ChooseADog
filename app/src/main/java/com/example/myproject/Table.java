@@ -44,12 +44,7 @@ public class Table extends AppCompatActivity  {
         });
         btnAlertTablAll = findViewById(R.id.btniform);
         btnFrAlertTabl = findViewById(R.id.abcBtn);
-        btnAlertTablAll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dialogGetTabl();
-            }
-        });
+        btnAlertTablAll.setOnClickListener(view -> dialogGetTabl());
     }
 
 
@@ -62,12 +57,9 @@ public class Table extends AppCompatActivity  {
         alertDialogTabl.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         alertDialogTabl.setCancelable(false);
         btnFrAlertTabl = viewtab.findViewById(R.id.abcBtn);
-        btnFrAlertTabl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                alertDialogTabl.cancel();
-                Toast.makeText(Table.this, arrayTabl[0], Toast.LENGTH_SHORT).show();
-            }
+        btnFrAlertTabl.setOnClickListener(view -> {
+            alertDialogTabl.cancel();
+            Toast.makeText(Table.this, arrayTabl[0], Toast.LENGTH_SHORT).show();
         });
         alertDialogTabl.show();
     }

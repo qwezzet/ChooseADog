@@ -29,7 +29,6 @@
                 android:layout_height="55dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
-                android:onClick="showAlertDialogDesk"
                 android:background="@drawable/info_icon"
                 tools:ignore="UsingOnClickInXml" />
 
@@ -98,7 +97,7 @@
                     android:layout_marginRight="40dp"
                     android:background="@drawable/custombtnsearch"
                     android:gravity="center"
-                    android:text="Мелкая порода"
+                    android:text="@string/first_poroda"
                     android:textSize="25sp" />
             </LinearLayout>
 
@@ -219,7 +218,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="20-22 (см)"
+                                android:text="@string/sm_20_22"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -260,7 +259,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="33-35 (см)"
+                                android:text="@string/sm_33_35"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -302,7 +301,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="19-21 (см)"
+                                android:text="@string/sm_19_21"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -436,7 +435,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="20-25 (см)"
+                                android:text="@string/sm_20_25"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -477,7 +476,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="35-38 (см)"
+                                android:text="@string/sm_35_38"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -520,7 +519,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="27-30 (см)"
+                                android:text="@string/sm_27_30"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -656,7 +655,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="27-30 (см)"
+                                android:text="@string/sm_27_30"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -697,7 +696,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="43-45 (см)"
+                                android:text="@string/sm_43_45"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -739,7 +738,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="30-33 (см)"
+                                android:text="@string/sm_30_33"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -792,7 +791,7 @@
                     android:layout_marginRight="40dp"
                     android:background="@drawable/custombtnsearch"
                     android:gravity="center"
-                    android:text="Малая порода"
+                    android:text="@string/second_poroda"
                     android:textSize="25sp" />
             </LinearLayout>
 
@@ -906,7 +905,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="5dp"
-                                android:text="27-30(см)"
+                                android:text="@string/sm_27_30"
                                 android:textSize="17sp" />
                         </LinearLayout>
 
@@ -945,7 +944,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="57-59 (см)"
+                                android:text="@string/sm_57_59"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -985,7 +984,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="46-50 (см)"
+                                android:text="@string/sm_46_50"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -1117,7 +1116,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="32-35 (см)"
+                                android:text="@string/sm_32_35"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -1158,7 +1157,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="45-47 (см)"
+                                android:text="@string/sm_45_47"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -1200,7 +1199,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="31-36 (см)"
+                                android:text="@string/sm_31_36"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -1333,7 +1332,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="38-40 (см)"
+                                android:text="@string/sm_38_40"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -1374,7 +1373,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="52-54 (см)"
+                                android:text="@string/sm_52_54"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -1416,7 +1415,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="33-38 (см)"
+                                android:text="@string/sm_33_38"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -1469,7 +1468,7 @@
                     android:layout_marginRight="40dp"
                     android:background="@drawable/custombtnsearch"
                     android:gravity="center"
-                    android:text="Средняя порода"
+                    android:text="@string/third_poroda"
                     android:textSize="25sp" />
             </LinearLayout>
 
@@ -1589,7 +1588,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="38-40 (см)"
+                                android:text="@string/sm_38_40"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -1630,7 +1629,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="63-64 (см)"
+                                android:text="@string/sm_63_64"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -1672,7 +1671,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="39-42 (см)"
+                                android:text="@string/sm_39_42"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -1806,7 +1805,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="42-45 (см)"
+                                android:text="@string/sm_42_45"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -1847,7 +1846,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="62-64 (см)"
+                                android:text="@string/sm_62_64"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -1889,7 +1888,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="35-38 (см)"
+                                android:text="@string/sm_35_38"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -2016,7 +2015,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="44-47 (см)"
+                                android:text="@string/sm_44_47"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -2055,7 +2054,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="69-72 (см)"
+                                android:text="@string/sm_69_72"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -2095,7 +2094,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="41-44 (см)"
+                                android:text="@string/sm_41_44"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -2146,7 +2145,7 @@
                     android:layout_marginRight="40dp"
                     android:background="@drawable/custombtnsearch"
                     android:gravity="center"
-                    android:text="Крупная порода"
+                    android:text="@string/forth_poroda"
                     android:textSize="25sp" />
             </LinearLayout>
 
@@ -2260,7 +2259,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="45-50 (см)"
+                                android:text="@string/sm_45_50"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -2299,7 +2298,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="76-78 (см)"
+                                android:text="@string/sm_76_78"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -2339,7 +2338,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="55-60 (см)"
+                                android:text="@string/sm_55_60"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -2471,7 +2470,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="52-55 (см)"
+                                android:text="@string/sm_52_55"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -2512,7 +2511,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="77-79 (см)"
+                                android:text="@string/sm_77_79"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -2554,7 +2553,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="50-55 (см)"
+                                android:text="@string/sm_50_55"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -2688,7 +2687,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="62-65 (см)"
+                                android:text="@string/sm_62_65"
                                 android:textSize="20sp" />
                         </LinearLayout>
 
@@ -2729,7 +2728,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="87-89 (см)"
+                                android:text="@string/sm_87_89"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -2771,7 +2770,7 @@
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
                                 android:paddingTop="10dp"
-                                android:text="60-65 (см)"
+                                android:text="@string/sm_60_65"
                                 android:textSize="20sp" />
 
                         </LinearLayout>
@@ -2805,7 +2804,7 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custombtnsearch"
-                android:text="Подробнее о замерах собаки"
+                android:text="@string/description_dog"
                 android:textAllCaps="false"
                 android:textColor="#3E3E3E"
                 android:textSize="20sp" />

@@ -33,7 +33,7 @@ public class TwoActivity extends AppCompatActivity {
     private LinearLayout filterLinearView6;
     private LinearLayout filterLinearView7;
     private Button filterButton;
-    private ArrayList<String> selectedFilters = new ArrayList<String>();
+    private final ArrayList<String> selectedFilters = new ArrayList<>();
     private String currentSearchText = "";
     private int textcolpressed, textcolunpressed;
     private Drawable btn_sel, btn_unsel;

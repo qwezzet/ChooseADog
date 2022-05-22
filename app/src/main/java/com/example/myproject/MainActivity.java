@@ -31,12 +31,7 @@ public class MainActivity extends AppCompatActivity {
         btnhello = findViewById(R.id.btnfrommaintotwo);
         btnAlert = findViewById(R.id.btnaboutall);
         btnFrAlert = findViewById(R.id.abBtn);
-        btnAlert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                dialogGet();
-            }
-        });
+        btnAlert.setOnClickListener(view -> dialogGet());
 
 
         btnhello.setOnClickListener(v -> {
@@ -58,12 +53,9 @@ public class MainActivity extends AppCompatActivity {
         alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         alertDialog.setCancelable(false);
         btnFrAlert = view.findViewById(R.id.abBtn);
-        btnFrAlert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                alertDialog.cancel();
-                Toast.makeText(MainActivity.this, array[0], Toast.LENGTH_SHORT).show();
-            }
+        btnFrAlert.setOnClickListener(view1 -> {
+            alertDialog.cancel();
+            Toast.makeText(MainActivity.this, array[0], Toast.LENGTH_SHORT).show();
         });
         alertDialog.show();
     }

@@ -3,11 +3,11 @@ package com.example.myproject;
 public class State {
 
     private String id;
-    private String filtid;
-    private String poroda;
-    private String secondporoda;
-    private String description;
-    private int imagedog;
+    private final String filtid;
+    private final String poroda;
+    private final String secondporoda;
+    private final String description;
+    private final int imagedog;
 
     public State(String id, String fid, String poroda, String secondporoda, String description, int imagedog) {
 
@@ -24,24 +24,12 @@ public class State {
         return secondporoda;
     }
 
-    public void setSecondporoda(String secondporoda) {
-        this.secondporoda = secondporoda;
-    }
-
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public int getImagedog() {
         return imagedog;
-    }
-
-    public void setImagedog(int imagedog) {
-        this.imagedog = imagedog;
     }
 
     public String getId() {
@@ -56,11 +44,6 @@ public class State {
         return poroda;
     }
 
-    public void setPoroda(String poroda) {
-        this.poroda = poroda;
-    }
-
     public String getFiltid() { return filtid; }
 
-    public void setFiltid(String filtid) { this.filtid = filtid; }
 }
