@@ -36,6 +36,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="130dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -46,45 +47,60 @@
                 tools:ignore="RtlHardcoded" />
         </LinearLayout>
     </LinearLayout>
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="1,2,3,4"
-        android:layout_margin="8dp">
+        android:layout_margin="8dp"
+        android:stretchColumns="1,2,3,4">
+
         <TableRow>
+
             <TextView
-                android:text="ID"
-                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
                 android:gravity="center"
-                android:layout_column="1"/>
+                android:text="@string/size"
+                android:textSize="22sp" />
+
             <TextView
-                android:text="NAME"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
                 android:gravity="center"
-                android:textSize="16sp"
-                android:layout_column="1"/>
+                android:text="@string/neck"
+                android:textSize="22sp" />
+
             <TextView
-                android:text="PAYMENT"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
                 android:gravity="center"
-                android:textSize="16sp"
-                android:layout_column="1"/>
+                android:text="@string/spine"
+                android:textSize="22sp" />
+
             <TextView
-                android:text="gfasd"
+                android:layout_width="wrap_content"
+                android:layout_column="1"
                 android:gravity="center"
-                android:textSize="16sp"
-                android:layout_column="1"/>
+                android:text="@string/breast"
+                android:textSize="22sp" />
         </TableRow>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
     </TableLayout>
 
+
     <android.widget.Button
+        android:id="@+id/btnaboutsizes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/custombtnsearch"
         android:text="@string/description_dog"
         android:textAllCaps="false"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnaboutsizes"/>
+        android:textSize="20sp" />
 </LinearLayout>

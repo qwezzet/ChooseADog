@@ -37,8 +37,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             holder.desctb_1.setText(model.getDesc_1());
             holder.desctb_2.setText(model.getDesc_2());
             holder.desctb_3.setText(model.getDesc_3());
-        } else {
-            return;
         }
     }
 
@@ -48,7 +46,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         return recycler_list.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView desctb_nm, desctb_1, desctb_2, desctb_3;
 
         public ViewHolder(@NonNull View itemView) {
