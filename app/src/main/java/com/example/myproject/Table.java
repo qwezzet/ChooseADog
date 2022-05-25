@@ -14,8 +14,15 @@ import android.widget.Toast;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-public class Table extends AppCompatActivity  {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Table extends AppCompatActivity {
+    RecyclerView recycler_view;
+    RecyclerAdapter adapter;
     Button backtomain, aboutsizes, btnAlertTablAll, btnFrAlertTabl;
 
 
@@ -23,12 +30,19 @@ public class Table extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+
         super.onCreate(savedInstanceState);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_tabl);
         ActionBar actionBar = getSupportActionBar();
         assert actionBar != null;
         actionBar.hide();
+
+
+        recycler_view = findViewById(R.id.recycler_view);
+        setRecyclerView();
+
+
         backtomain = findViewById(R.id.btnbacktomain);
         backtomain.setOnClickListener(v -> {
             Intent i = new Intent(Table.this, TwoActivity.class);
@@ -47,6 +61,18 @@ public class Table extends AppCompatActivity  {
         btnAlertTablAll.setOnClickListener(view -> dialogGetTabl());
     }
 
+    private void setRecyclerView() {
+        recycler_view.setHasFixedSize(true);
+        recycler_view.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new RecyclerAdapter(this, getList());
+        recycler_view.setAdapter(adapter);
+    }
+    private List< ClassForRecycler> getList(){
+        List<ClassForRecycler> recycler_list = new ArrayList<>();
+        recycler_list.add(new ClassForRecycler("1","1","2","3"));
+        return recycler_list;
+    }
+
 
     public void dialogGetTabl() {
         String[] arrayTabl = getResources().getStringArray(R.array.mainarray);
@@ -62,33 +88,5 @@ public class Table extends AppCompatActivity  {
             Toast.makeText(Table.this, arrayTabl[0], Toast.LENGTH_SHORT).show();
         });
         alertDialogTabl.show();
-    }
-    private void alertDialogs(int i3) {
-        String[] array = getResources().getStringArray(R.array.mainstates);
-        String[] arraydesc = getResources().getStringArray(R.array.aboutsizesintable);
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        alert.setTitle(array[0]);
-        alert.setMessage(arraydesc[i3]);
-        alert.setPositiveButton(array[2], (dialogInterface, i) -> Toast.makeText(Table.this, array[3], Toast.LENGTH_SHORT).show());
-        alert.create().show();
-    }
-
-    public void showAlertDialogInform1(View v) {
-        alertDialogs(0);
-    }
-
-
-    public void showAlertDialogInform2(View v) {
-        alertDialogs(1);
-    }
-
-
-    public void showAlertDialogInform3(View v) {
-        alertDialogs(2);
-    }
-
-
-    public void showAlertDialogInform4(View v) {
-        alertDialogs(3);
     }
 }
