@@ -106,16 +106,17 @@
             android:text="@string/version"
             android:textColor="@color/grayforversion"
             android:textSize="14sp" />
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:background="@color/menu_col"
             android:id="@+id/bottom_navigator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:itemBackground="@color/menu_col"
-            app:itemTextColor="@drawable/selected"
-            app:itemIconTint="@drawable/selected"
             android:layout_alignParentBottom="true"
-            app:menu="@menu/menu"/>
+            android:background="@color/menu_col"
+            app:itemBackground="@color/menu_col"
+            app:itemIconTint="@drawable/selected"
+            app:itemTextColor="@drawable/selected"
+            app:menu="@menu/menu" />
     </RelativeLayout>
 
 </LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/first_step"
+        android:title="@string/step_1"
+        android:icon="@drawable/icon_steps"/>
+    <item
+        android:id="@+id/second_step"
+        android:title="@string/step_2"
+        android:icon="@drawable/icon_steps"/>
+    <item
+        android:id="@+id/third_step"
+        android:title="@string/step_3"
+        android:icon="@drawable/icon_steps"/>
+</menu>
