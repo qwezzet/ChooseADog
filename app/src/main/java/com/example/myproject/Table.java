@@ -67,47 +67,23 @@ public class Table extends AppCompatActivity {
         adapter = new RecyclerAdapter(this, getList());
         recycler_view.setAdapter(adapter);
     }
-    private List< ClassForRecycler> getList(){
+
+    private List<ClassForRecycler> getList() {
         String[] s = getResources().getStringArray(R.array.sizez);
         String[] r = getResources().getStringArray(R.array.sizez_d);
         List<ClassForRecycler> recycler_list = new ArrayList<>();
-        recycler_list.add(new ClassForRecycler(s[0],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[0],r[0],r[2],r[2]));
-        recycler_list.add(new ClassForRecycler(s[0],r[0],r[4],r[2]));
-        recycler_list.add(new ClassForRecycler(s[1],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[1],r[0],r[2],r[2]));
-        recycler_list.add(new ClassForRecycler(s[1],r[0],r[4],r[2]));
-        recycler_list.add(new ClassForRecycler(s[2],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[2],r[0],r[2],r[2]));
-        recycler_list.add(new ClassForRecycler(s[2],r[0],r[4],r[2]));
-        recycler_list.add(new ClassForRecycler(s[3],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[3],r[0],r[2],r[2]));
-        recycler_list.add(new ClassForRecycler(s[3],r[0],r[4],r[2]));
-        recycler_list.add(new ClassForRecycler(s[4],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[4],r[0],r[2],r[2]));
-        recycler_list.add(new ClassForRecycler(s[4],r[0],r[4],r[2]));
-        recycler_list.add(new ClassForRecycler(s[5],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[5],r[0],r[2],r[2]));
-        recycler_list.add(new ClassForRecycler(s[5],r[0],r[4],r[2]));
-        recycler_list.add(new ClassForRecycler(s[6],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[6],r[0],r[2],r[2]));
-        recycler_list.add(new ClassForRecycler(s[6],r[0],r[4],r[2]));
-        recycler_list.add(new ClassForRecycler(s[7],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[7],r[0],r[2],r[2]));
-        recycler_list.add(new ClassForRecycler(s[7],r[0],r[4],r[2]));
-        recycler_list.add(new ClassForRecycler(s[8],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[8],r[0],r[2],r[2]));
-        recycler_list.add(new ClassForRecycler(s[8],r[0],r[4],r[2]));
-        recycler_list.add(new ClassForRecycler(s[9],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[9],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[9],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[10],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[10],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[10],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[11],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[11],r[0],r[2],r[7]));
-        recycler_list.add(new ClassForRecycler(s[11],r[0],r[2],r[7]));
-
+        recycler_list.add(new ClassForRecycler(s[0], r[2], r[0], r[1]));
+        recycler_list.add(new ClassForRecycler(s[1], r[5], r[3], r[4]));
+        recycler_list.add(new ClassForRecycler(s[2], r[7], r[5], r[6]));
+        recycler_list.add(new ClassForRecycler(s[3], r[9], r[5], r[8]));
+        recycler_list.add(new ClassForRecycler(s[4], r[16],r[10],r[13]));
+        recycler_list.add(new ClassForRecycler(s[5], r[17],r[14],r[15]));
+        recycler_list.add(new ClassForRecycler(s[6], r[11],r[14],r[12]));
+        recycler_list.add(new ClassForRecycler(s[7], r[4], r[25],r[26]));
+        recycler_list.add(new ClassForRecycler(s[8], r[24],r[19],r[29]));
+        recycler_list.add(new ClassForRecycler(s[9], r[22],r[18],r[20]));
+        recycler_list.add(new ClassForRecycler(s[10],r[27],r[21],r[30]));
+        recycler_list.add(new ClassForRecycler(s[11],r[28],r[31],r[23]));
         return recycler_list;
     }
 

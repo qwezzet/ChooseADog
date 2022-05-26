@@ -262,38 +262,38 @@
     <string name="house">Дом</string>
     <string name="all">Все</string>
     <string-array name="sizez_d">
-    <item>20–22 (см)</item>
-    <item>33–35 (см)</item>
-    <item>19–21 (см)</item>
-    <item>20–25 (см)</item>
-    <item>35–38 (см)</item>
-    <item>27–30 (см)</item>
-    <item>43–45 (см)</item>
-    <item>30–33 (см)</item>
-    <item>57–59 (см)</item>
-    <item>46–50 (см)</item>
-    <item>32–35 (см)</item>
-    <item>39–42 (см)</item>
-    <item>63–64 (см)</item>
-    <item>45–47 (см)</item>
-    <item>38–40 (см)</item>
-    <item>52–54 (см)</item>
-    <item>31–36 (см)</item>
-    <item>33–38 (см)</item>
-    <item>45–50 (см)</item>
-    <item>44–47 (см)</item>
-    <item>76–78 (см)</item>
-    <item>52–55 (см)</item>
-    <item>55–60 (см)</item>
-    <item>87–89 (см)</item>
-    <item>41–44 (см)</item>
-    <item>42–45 (см)</item>
-    <item>62–64 (см)</item>
-    <item>50–55 (см)</item>
-    <item>60–65 (см)</item>
-    <item>69–72 (см)</item>
-    <item>77–79 (см)</item>
-    <item>62–65 (см)</item>
+    <item>20–22 (см)</item>0
+    <item>33–35 (см)</item>1
+    <item>19–21 (см)</item>2
+    <item>20–25 (см)</item>3
+    <item>35–38 (см)</item>4
+    <item>27–30 (см)</item>5
+    <item>43–45 (см)</item>6
+    <item>30–33 (см)</item>7
+    <item>57–59 (см)</item>8
+    <item>46–50 (см)</item>9
+    <item>32–35 (см)</item>10
+    <item>39–42 (см)</item>11
+    <item>63–64 (см)</item>12
+    <item>45–47 (см)</item>13
+    <item>38–40 (см)</item>14
+    <item>52–54 (см)</item>15
+    <item>31–36 (см)</item>16
+    <item>33–38 (см)</item>17
+    <item>45–50 (см)</item>18
+    <item>44–47 (см)</item>19
+    <item>76–78 (см)</item>20
+    <item>52–55 (см)</item>21
+    <item>55–60 (см)</item>22
+    <item>87–89 (см)</item>23
+    <item>41–44 (см)</item>24
+    <item>42–45 (см)</item>25
+    <item>62–64 (см)</item>26
+    <item>50–55 (см)</item>27
+    <item>60–65 (см)</item>28
+    <item>69–72 (см)</item>29
+    <item>77–79 (см)</item>30
+    <item>62–65 (см)</item>31
     </string-array>
     <string-array name="sizez">
     <item>XS22</item>

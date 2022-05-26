@@ -175,10 +175,16 @@ public class TwoActivity extends AppCompatActivity {
 
 
                             filteredStates.add(state);
+
+
                         } else {
                             for (String filter : selectedFilters) {
-                                if (state.getId().toLowerCase().contains(filter)) {
-                                    filteredStates.add(state);
+                                if (state.getFiltid().toLowerCase().contains(filter)) {
+                                    if(filteredStates.contains(state)){
+
+                                    }else{
+                                        filteredStates.add(state);
+                                    }
                                 }
                             }
                         }
@@ -332,7 +338,7 @@ public class TwoActivity extends AppCompatActivity {
 
     private void filterList(String status) {
         if (status != null && !selectedFilters.contains(status))
-            selectedFilters.add(status);
+                selectedFilters.add(status);
         ArrayList<State> filteredStates = new ArrayList<>();
         for (State state : stateList) {
             for (String filter : selectedFilters) {
@@ -341,7 +347,7 @@ public class TwoActivity extends AppCompatActivity {
                         filteredStates.add(state);
                     } else {
                         if (state.getFiltid().toLowerCase().contains(currentSearchText.toLowerCase())) {
-                            filteredStates.add(state);
+                                filteredStates.add(state);
                         }
                     }
                 }
@@ -389,7 +395,7 @@ public class TwoActivity extends AppCompatActivity {
     }
 
     public void housebtn(View view) {
-        lunSelected(allBtn);
+        filterList("5");
         sFilter(houseBtn);
 
     }
