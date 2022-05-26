@@ -59,37 +59,49 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_column="1"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/customsearchview"
                 android:gravity="center"
                 android:text="@string/size"
                 android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
                 android:layout_column="1"
+                android:background="@drawable/customsearchview"
                 android:gravity="center"
                 android:text="@string/neck"
                 android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
                 android:layout_column="1"
+                android:background="@drawable/customsearchview"
                 android:gravity="center"
                 android:text="@string/spine"
                 android:textSize="22sp" />
 
             <TextView
                 android:layout_width="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
                 android:layout_column="1"
+                android:background="@drawable/customsearchview"
                 android:gravity="center"
                 android:text="@string/breast"
                 android:textSize="22sp" />
         </TableRow>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-       />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="7dp"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
     </TableLayout>
 
