@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/customactivity"
     android:orientation="vertical">
 
@@ -43,7 +44,7 @@
                 android:layout_gravity="right"
                 android:gravity="center"
                 android:text="@string/tabledescription"
-                android:textSize="21sp"
+                android:textSize="23sp"
                 tools:ignore="RtlHardcoded" />
         </LinearLayout>
     </LinearLayout>
@@ -114,4 +115,18 @@
         android:text="@string/description_dog"
         android:textAllCaps="false"
         android:textSize="20sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:background="@color/menu_col"
+            android:id="@+id/bottom_navigator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/menu_col"
+            app:itemTextColor="@drawable/selected"
+            app:itemIconTint="@drawable/selected"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/menu"/>
+    </RelativeLayout>
 </LinearLayout>

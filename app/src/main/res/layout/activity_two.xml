@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,10 +16,10 @@
             android:id="@+id/btntotbl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/customphotomain"
-            android:layout_gravity="center"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
             android:src="@drawable/tablephoto1"
@@ -57,8 +58,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/customsearchview"
             android:iconifiedByDefault="false"
-            android:queryHint="Введите наименование породы"
-            />
+            android:queryHint="Введите наименование породы" />
 
 
     </LinearLayout>
@@ -228,6 +228,7 @@
                     android:onClick="housebtn"
                     android:text="@string/housedog"
                     tools:ignore="UsingOnClickInXml" />
+
                 <android.widget.Button
                     android:id="@+id/filtoxot"
                     android:layout_width="0dp"
@@ -235,10 +236,10 @@
                     android:layout_marginLeft="2dp"
                     android:layout_marginRight="2dp"
                     android:layout_weight="1"
-                    android:textSize="13sp"
                     android:background="@drawable/customtextview2"
                     android:onClick="oxotbtn"
                     android:text="@string/oxot"
+                    android:textSize="13sp"
                     tools:ignore="UsingOnClickInXml" />
 
             </LinearLayout>
@@ -308,13 +309,33 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <ListView
-        android:id="@+id/doglistview"
-        android:layout_marginTop="10dp"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:choiceMode="multipleChoice" />
+        android:layout_height="wrap_content">
+        <ListView
+            android:id="@+id/doglistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:choiceMode="multipleChoice" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:background="@color/menu_col"
+            android:id="@+id/bottom_navigator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/menu_col"
+            app:itemIconTint="@drawable/selected"
+            app:itemTextColor="@drawable/selected"
+            app:menu="@menu/menu" />
+    </RelativeLayout>
+</LinearLayout>
 
 
 </LinearLayout>

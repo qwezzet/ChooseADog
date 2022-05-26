@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -12,9 +13,12 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SearchView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
@@ -39,10 +43,11 @@ public class TwoActivity extends AppCompatActivity {
     private Drawable btn_sel, btn_unsel;
     private SearchView searchView;
     boolean filterHidden = true;
+    BottomNavigationView bottomNavigationView;
     private Button bigBtn, midleBtn, smallBtn, sluzhBtn, houseBtn, oxotBtn, longBtn, shortBtn, smeshBtn, allBtn;
 
 
-    @SuppressLint("SourceLockedOrientationActivity")
+    @SuppressLint({"SourceLockedOrientationActivity", "NonConstantResourceId"})
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +60,7 @@ public class TwoActivity extends AppCompatActivity {
         assert actionBar != null;
         actionBar.hide();
         setupData();
+
         initWidgets();
         setupList();
         initSearchWidgets();
@@ -70,7 +76,23 @@ public class TwoActivity extends AppCompatActivity {
             Intent i = new Intent(TwoActivity.this, Table.class);
             startActivity(i);
         });
-
+        bottomNavigationView = findViewById(R.id.bottom_navigator);
+        bottomNavigationView.setSelectedItemId(R.id.home_menu);
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()){
+                case R.id.start_menu:
+                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    overridePendingTransition(0,0);
+                    return true;
+                case R.id.home_menu:
+                    return true;
+                case R.id.table_menu:
+                    startActivity(new Intent(getApplicationContext(),Table.class));
+                    overridePendingTransition(0,0);
+                    return true;
+            }
+            return false;
+        });
 
     }
 
@@ -180,9 +202,9 @@ public class TwoActivity extends AppCompatActivity {
                         } else {
                             for (String filter : selectedFilters) {
                                 if (state.getFiltid().toLowerCase().contains(filter)) {
-                                    if(filteredStates.contains(state)){
+                                    if (filteredStates.contains(state)) {
 
-                                    }else{
+                                    } else {
                                         filteredStates.add(state);
                                     }
                                 }
@@ -338,7 +360,7 @@ public class TwoActivity extends AppCompatActivity {
 
     private void filterList(String status) {
         if (status != null && !selectedFilters.contains(status))
-                selectedFilters.add(status);
+            selectedFilters.add(status);
         ArrayList<State> filteredStates = new ArrayList<>();
         for (State state : stateList) {
             for (String filter : selectedFilters) {
@@ -347,7 +369,7 @@ public class TwoActivity extends AppCompatActivity {
                         filteredStates.add(state);
                     } else {
                         if (state.getFiltid().toLowerCase().contains(currentSearchText.toLowerCase())) {
-                                filteredStates.add(state);
+                            filteredStates.add(state);
                         }
                     }
                 }

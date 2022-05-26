@@ -45,4 +45,6 @@
     <color name="aqua">#00FFFF</color>
     <color name="lime">#00FF00</color>
     <color name="mediumgreen">#00FA9A</color>
+    <color name="menu_col">#847b82</color>
+
 </resources>

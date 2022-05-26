@@ -17,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,9 +26,9 @@ public class Table extends AppCompatActivity {
     RecyclerView recycler_view;
     RecyclerAdapter adapter;
     Button backtomain, aboutsizes, btnAlertTablAll, btnFrAlertTabl;
+    BottomNavigationView bottomNavigationView;
 
-
-    @SuppressLint("SourceLockedOrientationActivity")
+    @SuppressLint({"SourceLockedOrientationActivity", "NonConstantResourceId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -59,6 +61,25 @@ public class Table extends AppCompatActivity {
         btnAlertTablAll = findViewById(R.id.btniform);
         btnFrAlertTabl = findViewById(R.id.abcBtn);
         btnAlertTablAll.setOnClickListener(view -> dialogGetTabl());
+
+
+        bottomNavigationView = findViewById(R.id.bottom_navigator);
+        bottomNavigationView.setSelectedItemId(R.id.table_menu);
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()){
+                case R.id.start_menu:
+                    startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    overridePendingTransition(0,0);
+                    return true;
+                case R.id.home_menu:
+                    startActivity(new Intent(getApplicationContext(),TwoActivity.class));
+                    overridePendingTransition(0,0);
+                    return true;
+                case R.id.table_menu:
+                    return true;
+            }
+            return false;
+        });
     }
 
     private void setRecyclerView() {

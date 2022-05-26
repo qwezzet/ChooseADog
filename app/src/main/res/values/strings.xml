@@ -199,6 +199,54 @@
         <item>Японские хины, одушевленные сокровища японских и китайских императоров, уже давно завоевали сердца фанатов комнатных декоративных собак во всем мире. Они продолжают умилять собаководов своей грациозностью и миловидностью. Их нежная, хрупкая красота в соединении с умом, понятливостью, деликатностью, искренней преданностью и любовью к человеку демонстрируют удивительный симбиоз, вызывая у людей чувство прекрасного и благородное желание заботиться о братьях наших меньших.</item>
         <item>Японский шпиц – белоснежное лохматое чудо с огоньком в глазах и счастливой улыбкой на морде. Основное предназначение породы – приятельствовать и составлять компанию, с чем ее представители справляются на самом высшем уровне. В меру любознательный и по-хорошему сдержанный в эмоциональном плане, японский шпиц являет собой пример идеального друга и соратника, с которым всегда легко. Перепады настроения, эксцентричное поведение, нервозность – все это несвойственно и непонятно игривому «японцу», рожденному со стратегическим запасом позитива и отличного настроения, которого животному хватает на всю его долгую жизнь.</item>
     </string-array>
+    <string-array name="sizez_d">
+        <item>20–22 (см)</item>0
+        <item>33–35 (см)</item>1
+        <item>19–21 (см)</item>2
+        <item>20–25 (см)</item>3
+        <item>35–38 (см)</item>4
+        <item>27–30 (см)</item>5
+        <item>43–45 (см)</item>6
+        <item>30–33 (см)</item>7
+        <item>57–59 (см)</item>8
+        <item>46–50 (см)</item>9
+        <item>32–35 (см)</item>10
+        <item>39–42 (см)</item>11
+        <item>63–64 (см)</item>12
+        <item>45–47 (см)</item>13
+        <item>38–40 (см)</item>14
+        <item>52–54 (см)</item>15
+        <item>31–36 (см)</item>16
+        <item>33–38 (см)</item>17
+        <item>45–50 (см)</item>18
+        <item>44–47 (см)</item>19
+        <item>76–78 (см)</item>20
+        <item>52–55 (см)</item>21
+        <item>55–60 (см)</item>22
+        <item>87–89 (см)</item>23
+        <item>41–44 (см)</item>24
+        <item>42–45 (см)</item>25
+        <item>62–64 (см)</item>26
+        <item>50–55 (см)</item>27
+        <item>60–65 (см)</item>28
+        <item>69–72 (см)</item>29
+        <item>77–79 (см)</item>30
+        <item>62–65 (см)</item>31
+    </string-array>
+    <string-array name="sizez">
+        <item>XS22</item>
+        <item>XS25</item>
+        <item>XS30</item>
+        <item>S30</item>
+        <item>S35</item>
+        <item>S40</item>
+        <item>M40</item>
+        <item>M45</item>
+        <item>M47</item>
+        <item>M50</item>
+        <item>L55</item>
+        <item>L65</item>
+    </string-array>
     <string name="tablalert">В данной таблице представлены приблизительные значения и размеры разных пород собак. Для достоверной информации необходима консультация специалиста.</string>
     <string name="tabledescription">Добро пожаловать в таблицу размеров, именно здесь вы найдете нужную информацию о росте и размере породы</string>
     <string name="first_desc">Придерживая собаку в положении стоя измерьте длину от основания хвостика до холки.</string>
@@ -248,65 +296,20 @@
     <string name="version">v 1.0.0</string>
     <string name="neck">Обхват шеи</string>
     <string name="filters">Фильтры</string>
+    <string name="table_m">Таблица</string>
     <string name="oxot">Охотничьи</string>
     <string name="species">Породы</string>
     <string name="smalldog">Малые</string>
     <string name="bigdog">Крупные</string>
+    <string name="start_m">Начало</string>
     <string name="information">i</string>
     <string name="name">Название</string>
     <string name="start">Начать!</string>
     <string name="unshow">Скрыть</string>
     <string name="size">Размер</string>
     <string name="dog">Собака</string>
+    <string name="home_m">Дом</string>
     <string name="exit">Выход</string>
     <string name="house">Дом</string>
     <string name="all">Все</string>
-    <string-array name="sizez_d">
-    <item>20–22 (см)</item>0
-    <item>33–35 (см)</item>1
-    <item>19–21 (см)</item>2
-    <item>20–25 (см)</item>3
-    <item>35–38 (см)</item>4
-    <item>27–30 (см)</item>5
-    <item>43–45 (см)</item>6
-    <item>30–33 (см)</item>7
-    <item>57–59 (см)</item>8
-    <item>46–50 (см)</item>9
-    <item>32–35 (см)</item>10
-    <item>39–42 (см)</item>11
-    <item>63–64 (см)</item>12
-    <item>45–47 (см)</item>13
-    <item>38–40 (см)</item>14
-    <item>52–54 (см)</item>15
-    <item>31–36 (см)</item>16
-    <item>33–38 (см)</item>17
-    <item>45–50 (см)</item>18
-    <item>44–47 (см)</item>19
-    <item>76–78 (см)</item>20
-    <item>52–55 (см)</item>21
-    <item>55–60 (см)</item>22
-    <item>87–89 (см)</item>23
-    <item>41–44 (см)</item>24
-    <item>42–45 (см)</item>25
-    <item>62–64 (см)</item>26
-    <item>50–55 (см)</item>27
-    <item>60–65 (см)</item>28
-    <item>69–72 (см)</item>29
-    <item>77–79 (см)</item>30
-    <item>62–65 (см)</item>31
-    </string-array>
-    <string-array name="sizez">
-    <item>XS22</item>
-    <item>XS25</item>
-    <item>XS30</item>
-    <item>S30</item>
-    <item>S35</item>
-    <item>S40</item>
-    <item>M40</item>
-    <item>M45</item>
-    <item>M47</item>
-    <item>M50</item>
-    <item>L55</item>
-    <item>L65</item>
-    </string-array>
 </resources>

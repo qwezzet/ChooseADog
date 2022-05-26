@@ -15,10 +15,12 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class MainActivity extends AppCompatActivity {
     Button btnhello, btnclose, btnAlert, btnFrAlert;
-
-    @SuppressLint("SourceLockedOrientationActivity")
+    BottomNavigationView bottomNavigationView;
+    @SuppressLint({"SourceLockedOrientationActivity", "NonConstantResourceId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -47,6 +49,27 @@ public class MainActivity extends AppCompatActivity {
             finish();
             System.exit(0);
         });
+
+
+        bottomNavigationView = findViewById(R.id.bottom_navigator);
+        bottomNavigationView.setSelectedItemId(R.id.start_menu);
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()){
+                case R.id.start_menu:
+                    return true;
+                case R.id.home_menu:
+                    startActivity(new Intent(getApplicationContext(),TwoActivity.class));
+                    overridePendingTransition(0,0);
+                    return true;
+                case R.id.table_menu:
+                    startActivity(new Intent(getApplicationContext(),Table.class));
+                    overridePendingTransition(0,0);
+                    return true;
+            }
+            return false;
+        });
+
+
     }
 
 
