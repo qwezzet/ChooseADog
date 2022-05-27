@@ -25,6 +25,7 @@
 
         </activity>
         <activity android:name=".TwoActivity" />
+        <activity android:name=".Sizes" />
         <activity android:name=".Description" />
         <activity android:name=".Table" />
         <activity android:name=".StateAboutDog" />

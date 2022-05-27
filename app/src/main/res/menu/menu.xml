@@ -12,4 +12,8 @@
     android:id="@+id/table_menu"
     android:title="@string/table_m"
     android:icon="@drawable/icon_table"/>
+    <item
+    android:id="@+id/desc_menu"
+    android:title="@string/sizes_t"
+    android:icon="@drawable/icon_description"/>
 </menu>

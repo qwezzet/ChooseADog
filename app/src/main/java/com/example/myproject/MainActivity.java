@@ -65,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(),Table.class));
                     overridePendingTransition(0,0);
                     return true;
+                case R.id.desc_menu:
+                    startActivity(new Intent(getApplicationContext(),Sizes.class));
+                    overridePendingTransition(0,0);
+                    return true;
             }
             return false;
         });

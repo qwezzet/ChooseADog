@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customactivity"
+    android:orientation="vertical"
+    tools:context=".Sizes">
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/before"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="72dp"
+            android:background="@android:color/transparent"
+            android:paddingStart="40sp"
+            android:src="@drawable/icon_back_t"
+            tools:ignore="ContentDescription,RtlSymmetry" />
+
+        <ImageSwitcher
+            android:id="@+id/imageSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="333dp"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="72dp"
+            android:background="@android:color/transparent"
+            android:paddingEnd="40sp"
+            android:src="@drawable/icon_next_t"
+            tools:ignore="ContentDescription,RtlSymmetry" />
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="25sp"
+    android:layout_margin="18dp"
+    android:text="@string/yes"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/menu_col"
+            app:itemBackground="@color/menu_col"
+            app:itemIconTint="@drawable/selected"
+            app:itemTextColor="@drawable/selected"
+            app:menu="@menu/menu" />
+    </RelativeLayout>
+</LinearLayout>

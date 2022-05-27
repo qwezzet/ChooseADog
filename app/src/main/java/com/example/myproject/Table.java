@@ -77,6 +77,10 @@ public class Table extends AppCompatActivity {
                     return true;
                 case R.id.table_menu:
                     return true;
+                case R.id.desc_menu:
+                    startActivity(new Intent(getApplicationContext(),Sizes.class));
+                    overridePendingTransition(0,0);
+                    return true;
             }
             return false;
         });

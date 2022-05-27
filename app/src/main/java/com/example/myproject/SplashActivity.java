@@ -26,7 +26,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 super.run();
                 try {
-                    sleep(1111);
+                    sleep(887);
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 } finally {
