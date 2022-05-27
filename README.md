@@ -1,3 +1,3 @@
-# ChooseADog
+### ChooseADog
 # Выбери собаку
-it's my project!
+##it's my project!
